@@ -41,6 +41,10 @@
 
 ## 📎 참고 자료
 
+- 관련 Issue: [Issue](URL)
+- 검토 PR: [PR](URL)
+- 검토 상태: PR 검토 대기 / 병합 완료
+
 - [Notion 회의록](URL)
 - [GitHub 회의록](URL)
 
