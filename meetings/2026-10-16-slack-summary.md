@@ -90,7 +90,7 @@
 ## 📎 참고 자료
 
 - [관련 Issue #1](https://github.com/fin-ai-lab-2026/docs/issues/1)
-- 검토 PR: 생성 후 연결
+- [검토 PR #2](https://github.com/fin-ai-lab-2026/docs/pull/2)
 - 오늘의 기존 main 저장 이력은 유지하며, 이 연결 정보 변경은 PR에서 검토합니다.
 
 - [Notion 회의록](https://app.notion.com/p/3fb80be201ba814caf8df38f3c448179)
