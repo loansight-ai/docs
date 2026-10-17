@@ -90,8 +90,8 @@
 ## 📎 참고 자료
 
 - [관련 Issue #1](https://github.com/fin-ai-lab-2026/docs/issues/1)
-- [검토 PR #2](https://github.com/fin-ai-lab-2026/docs/pull/2)
-- 오늘의 기존 main 저장 이력은 유지하며, 이 연결 정보 변경은 PR에서 검토합니다.
+- [관련 PR #2 · 병합 완료](https://github.com/fin-ai-lab-2026/docs/pull/2)
+- 기존 main 저장 이력을 유지하고, 관련 Issue 연결 변경은 PR #2로 병합했습니다.
 
 - [Notion 회의록](https://app.notion.com/p/3fb80be201ba814caf8df38f3c448179)
 - [GitHub 회의록](https://github.com/fin-ai-lab-2026/docs/blob/main/meetings/2026-10-16-slack-summary.md)
