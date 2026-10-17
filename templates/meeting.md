@@ -1,6 +1,6 @@
 # 회의록 — YYYY-MM-DD · 주제
 
-> **초안 · 검토 전** | 실시간 회의 / Slack 일일 요약  
+> **초안 · 작성 중** | 실시간 회의 / Slack 일일 요약  
 > 수집 구간: YYYY-MM-DD HH:mm ~ YYYY-MM-DD HH:mm (KST)  
 > 참여자: 미정 · 작성자: 미정 · 검토자: 미정
 
@@ -42,8 +42,8 @@
 ## 📎 참고 자료
 
 - 관련 Issue: [Issue](URL)
-- 검토 PR: [PR](URL)
-- 검토 상태: PR 검토 대기 / 병합 완료
+- 관련 PR: [PR](URL)
+- 처리 상태: 작성 중 / 검증 중 / 병합 완료
 
 - [Notion 회의록](URL)
 - [GitHub 회의록](URL)
