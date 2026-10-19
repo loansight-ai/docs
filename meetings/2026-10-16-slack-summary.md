@@ -115,6 +115,7 @@
 
 ## 📎 참고 자료
 
+- [첨부 보완 PR #8](https://github.com/fin-ai-lab-2026/docs/pull/8)
 - [첨부 보완 Issue #7](https://github.com/fin-ai-lab-2026/docs/issues/7)
 - [관련 Issue #1](https://github.com/fin-ai-lab-2026/docs/issues/1)
 - [관련 PR #2 · 병합 완료](https://github.com/fin-ai-lab-2026/docs/pull/2)
