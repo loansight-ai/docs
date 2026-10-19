@@ -119,9 +119,10 @@ V3의 기업 재무 조회 → 나라장터 공고 → 자금 부담 → 위험 
 
 ## 📎 참고 자료
 
+- [PR #10](https://github.com/fin-ai-lab-2026/docs/pull/10)
 - [Issue #9](https://github.com/fin-ai-lab-2026/docs/issues/9)
 - [Notion 회의록](https://app.notion.com/p/3fe80be201ba810895b6f59ed4bd4d6e)
-- [GitHub 브랜치 회의록](https://github.com/fin-ai-lab-2026/docs/blob/docs/9-slack-summary-2026-10-19/meetings/2026-10-19-slack-summary.md)
+
 
 <details>
 <summary>원문·수집 정보</summary>
