@@ -119,6 +119,7 @@ v0.0.4의 문서 메모에는 데이터 담당들의 작성, 서종원 확인, �
 
 ## 📎 참고 자료
 
+- [PR #12](https://github.com/fin-ai-lab-2026/docs/pull/12)
 - [Issue #11](https://github.com/fin-ai-lab-2026/docs/issues/11)
 - [Notion 회의록](https://app.notion.com/p/3ff80be201ba818687abde5ce470fc6c)
 
