@@ -117,8 +117,8 @@ WorkPulse에서 분기·반기 조회, 보고서 신뢰 수준 표시, 시장 �
 - [Notion 회의록](https://app.notion.com/p/40180be201ba8133bd24df6243ad138b)
 
 - [Issue #17](https://github.com/fin-ai-lab-2026/docs/issues/17)
-- PR 링크: 생성 후 연결
-- 처리 상태: 작성 중 · 첨부 확인 미완료
+- [Draft PR #18](https://github.com/fin-ai-lab-2026/docs/pull/18)
+- 처리 상태: 부분 저장 · 첨부 확인 미완료 · Draft PR 미병합
 
 <details>
 <summary>회의 준비·안건</summary>
