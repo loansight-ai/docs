@@ -97,7 +97,7 @@
 
 - [Notion 회의록](https://app.notion.com/p/40280be201ba81b78be9fe4478bd8d57)
 - 관련 Issue: [Issue #25](https://github.com/loansight-ai/docs/issues/25)
-- 관련 PR: 작성 중
+- 관련 PR: [PR #26](https://github.com/loansight-ai/docs/pull/26)
 - GitHub 문서: [작업 브랜치 문서](https://github.com/loansight-ai/docs/blob/docs/25-slack-summary-2026-10-23/meetings/2026-10-23-slack-summary.md)
 - 처리 범위: 대화·확인한 문서의 요약 · 대용량 원본 데이터 미열람 · 원자료 업로드 없음
 
