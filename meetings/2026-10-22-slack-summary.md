@@ -116,7 +116,7 @@ v0.0.3의 신규 N-R32~37은 업종 판정/매핑, 산식 사전, 차입금·상
 
 - [Notion 회의록](https://app.notion.com/p/40180be201ba8145b31fdf1c87cce5c8)
 - 관련 Issue: [Issue #23](https://github.com/loansight-ai/docs/issues/23)
-- 관련 PR: 작성 중
+- 관련 PR: [PR #24](https://github.com/loansight-ai/docs/pull/24)
 - GitHub 문서: [작업 브랜치 문서](https://github.com/loansight-ai/docs/blob/docs/23-slack-summary-2026-10-22/meetings/2026-10-22-slack-summary.md)
 - 처리 범위: 대화·확인한 문서의 요약 · 대용량 원본 데이터 미열람 · 원자료 업로드 없음
 
