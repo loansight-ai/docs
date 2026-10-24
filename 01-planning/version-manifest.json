@@ -1,0 +1,74 @@
+{
+  "project": "LoanSight AI",
+  "publication_date": "2026-10-24",
+  "basis": {
+    "plan": "v2.0",
+    "requirements": "v0.0.4",
+    "PRD": "v0.0.4",
+    "functions": "v0.0.4",
+    "WBS": "v1.1"
+  },
+  "counts": {
+    "requirements": 43,
+    "functions": 41,
+    "screens": 8,
+    "unknown_questions": 20,
+    "improvement_records": 38,
+    "requirement_function_links": 43,
+    "WBS_tasks": 69
+  },
+  "sources": {
+    "plan": {
+      "filename": "LoanSight_AI_기획안_v2.0.docx",
+      "version": "v2.0",
+      "repository_path": "01-planning/sources/LoanSight_AI_기획안_v2.0.docx",
+      "sha256": "fd0717b81e562166248006c3789d0b6f76dd888fa085ca70ae771f3731ab2715",
+      "size": 44022
+    },
+    "requirements": {
+      "filename": "LoanSight AI_요구사항정의서_v0.0.4_261023.xlsx",
+      "version": "v0.0.4",
+      "repository_path": "01-planning/sources/LoanSight AI_요구사항정의서_v0.0.4_261023.xlsx",
+      "sha256": "c788fdcccfd3d867a1f1812ed4bbe883d05b56afa52d91e650ea23f10582983c",
+      "size": 40197
+    },
+    "functions": {
+      "filename": "LoanSight AI_기능명세서_v0.0.4_261024.xlsx",
+      "version": "v0.0.4",
+      "repository_path": "01-planning/sources/LoanSight AI_기능명세서_v0.0.4_261024.xlsx",
+      "sha256": "172e38c0681edb64cd992cef9700fea6a872a86f67e78c070fafc43cbf0b49b7",
+      "size": 34483
+    },
+    "PRD": {
+      "filename": "LoanSight AI_PRD_v0.0.4_261024_김동혁.docx",
+      "version": "v0.0.4",
+      "repository_path": "01-planning/sources/LoanSight AI_PRD_v0.0.4_261024_김동혁.docx",
+      "sha256": "ea2c6f6dacf5222a01f984e9a63d433b5ab50d2e3328f30d045bf8d224f25dee",
+      "size": 57227
+    },
+    "WBS": {
+      "filename": "LoanSight AI_WBS_v1.1_261024.xlsx",
+      "version": "v1.1",
+      "repository_path": "01-planning/sources/LoanSight AI_WBS_v1.1_261024.xlsx",
+      "sha256": "1eab5f2e6db79d0e8de00ac47b9478c05eda72db04ed271e33fcf40d36914f53",
+      "size": 52534
+    },
+    "WBS-Markdown": {
+      "filename": "LoanSight AI_WBS_v1.1_261024.md",
+      "version": "v1.1",
+      "repository_path": "01-planning/sources/LoanSight AI_WBS_v1.1_261024.md",
+      "sha256": "1478d290a314f9239b8ebbe37b31e8ef2ddad51806583b130981776ea68d27b0",
+      "size": 75600
+    }
+  },
+  "documents": {
+    "plan": "01-planning/proposal.md",
+    "PRD": "01-planning/prd.md",
+    "requirements": "01-planning/requirements.md",
+    "functions": "01-planning/functions.md",
+    "WBS": "01-planning/wbs.md"
+  },
+  "source_unchanged": true,
+  "unknowns_preserved": true,
+  "implementation_or_acceptance_complete": false
+}
