@@ -115,10 +115,10 @@ PRD·기능명세 v0.0.4와 WBS v1.1이 기획안 v2.0 반영본으로 공유됐
 ## 📎 참고 자료
 
 - [Issue #27](https://github.com/loansight-ai/docs/issues/27)
-- 관련 PR: 작성 중
-- GitHub 문서: 작업 브랜치 작성 중
+- [PR #28](https://github.com/loansight-ai/docs/pull/28)
+- [GitHub 작업 브랜치 회의록](https://github.com/loansight-ai/docs/blob/docs/27-slack-summary-2026-10-26/meetings/2026-10-26-slack-summary.md)
 - [Notion 회의록](https://app.notion.com/p/40580be201ba81729a2df2848c9f642e)
-- 처리 상태: 작성·검증 중 · 화면 PDF 2건 미열람 · 원본 첨부 업로드 없음
+- 처리 상태: 회의록 요약 검증 중 · 화면 PDF 2건 미열람 · 원본 첨부 업로드 없음
 
 <details>
 <summary>회의 준비·안건</summary>
