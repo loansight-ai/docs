@@ -13,3 +13,5 @@ Figma 실제 v0.0.2는 편집 한도로 미완료이며 Notion의 기존 질문 
 WBS 2.4·5.M4의 Notion 미정 질문=N-U09 두 칸은 “기존 값 보존” 답변에 따라 유지한다. 기존 자동 승인 차단의 삭제 대기는 종료하고 로컬과 다른 사용자 지정 보존 항목으로 관리한다. 다른 행 값·담당·상태·메모와 기획 산출물 버전·해시는 변경하지 않는다.
 
 Issue: https://github.com/loansight-ai/docs/issues/37
+
+PR: https://github.com/loansight-ai/docs/pull/38
