@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>N-S08 검증 기록</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="N-S08" data-name="검증 기록 (구성안)" data-f="N-F19 · F25 · F26 · F35" data-r="N-R22 · R28 · R29 · R37" data-p="13 / 14"></header>
+  <div class="sheet-body">
+    <div class="app" data-active="S08" data-ctx='{"co":"전체 표본","ind":"4개 업종","rpt":"검증 표본 관리","basis":"연결 우선","date":"2026.10.24 기준"}'>
+      <main class="main">
+        <div class="page-h">
+          <div><h1>검증 기록</h1><p>기능·주석 추출·계정 확보·모델·사용자 실험의 검증 상태를 한곳에서 봅니다. 측정 전 항목은 값 대신 “측정 전”으로 남깁니다.</p></div>
+          <div class="acts"><span class="tag hyp" style="align-self:center">별도 화면 여부 미정</span></div>
+        </div>
+
+        <div class="panel mk-wrap"><i class="mk">1</i>
+          <div class="panel-h"><h2>표본 구분</h2><span class="sub">목적이 다른 표본을 섞지 않습니다</span></div>
+          <table class="t">
+            <thead><tr><th>표본</th><th>목적</th><th class="n">규모</th><th>상태</th><th>관련 미정</th></tr></thead>
+            <tbody>
+              <tr><td>기능 검증</td><td class="small">조회·계산·화면 점검</td><td class="n">15곳</td><td><span class="st caut">논의 필요</span></td><td><span class="id u">N-U02</span></td></tr>
+              <tr><td>원문 대조 정답지</td><td class="small">핵심 비율 손계산·주석·뉴스 정답</td><td class="n">5곳</td><td><span class="st caut">논의 필요</span></td><td><span class="id u">N-U09</span></td></tr>
+              <tr><td>원문 추출 시트 v0.0.1</td><td class="small">업종별 추출 규칙 점검 (기획안 인용)</td><td class="n">40곳 (업종별 10)</td><td><span class="st watch">재검증 전</span></td><td><span class="id u">N-U19</span></td></tr>
+              <tr><td>계정 확보 점검</td><td class="small">업종별 필수 계정 확보율</td><td class="n">업종별 5곳 이상</td><td><span class="st none">계획</span></td><td><span class="id u">N-U02</span></td></tr>
+              <tr><td>모델 학습·평가</td><td class="small">12개월 위험 사건 예측</td><td class="n">미정</td><td><span class="st none">미확정</span></td><td><span class="id u">N-U01</span><span class="id u">N-U03</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1.4fr 1fr">
+          <div class="panel mk-wrap"><i class="mk">2</i>
+            <div class="panel-h"><h2>주석 추출 정밀도·재현율</h2><span class="sub">업종 × 항목 · 원문 대조 후 기록</span></div>
+            <table class="t">
+              <thead><tr><th>항목</th><th class="n">제조</th><th class="n">건설</th><th class="n">도소매</th><th class="n">부동산 임대</th></tr></thead>
+              <tbody>
+                <tr><td>감사의견·계속기업</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>차입 만기·재무약정</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>담보 제공</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>소송·제재</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>PF·조건부 의무</td><td class="n muted">–</td><td class="n muted">측정 전</td><td class="n muted">–</td><td class="n muted">측정 전</td></tr>
+              </tbody>
+            </table>
+            <p class="src">칸에는 측정 후 “정밀도 / 재현율 (n)”을 기록합니다. 합격 기준은 미정(N-U18).</p>
+          </div>
+          <div class="panel mk-wrap"><i class="mk">3</i>
+            <div class="panel-h"><h2>미검출 우선 보완 항목</h2><span class="sub">기획안 인용 · 독립 검증 아님</span></div>
+            <table class="t">
+              <thead><tr><th>업종 · 항목</th><th class="n">미검출 (인용)</th><th>원인 분류</th></tr></thead>
+              <tbody>
+                <tr><td>건설 · 분양률/미분양</td><td class="n">8 / 10</td><td><span class="st none">판정 전</span></td></tr>
+                <tr><td>임대 · 작성기준일 이후</td><td class="n">9 / 10</td><td><span class="st none">판정 전</span></td></tr>
+                <tr><td>제조 · 담보 제공 자산</td><td class="n">6 / 10</td><td><span class="st none">판정 전</span></td></tr>
+                <tr><td>도소매 · 점포/매장</td><td class="n">6 / 10</td><td><span class="st none">판정 전</span></td></tr>
+              </tbody>
+            </table>
+            <p class="src">원인은 규칙 누락 / 공시 없음 / 형식 차이로 나눕니다. 공시 없음 판정은 원문 대조가 필요합니다.</p>
+          </div>
+        </div>
+
+        <div class="grid g3">
+          <div class="panel mk-wrap"><i class="mk">4</i>
+            <div class="panel-h"><h2>모델 비교</h2><span class="sub">동일 평가셋 · 자연 발생 비율</span></div>
+            <table class="t">
+              <thead><tr><th>지표</th><th class="n">재무 기준</th><th class="n">재무+주석</th></tr></thead>
+              <tbody>
+                <tr><td>PR-AUC</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>정밀도 / 재현율</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>Brier</td><td class="n muted">측정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>사건 수 (유형별)</td><td class="n muted">미확정</td><td class="n muted">미확정</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="panel mk-wrap"><i class="mk">5</i>
+            <div class="panel-h"><h2>계정 확보율</h2><span class="sub">업종별 필수 계정</span></div>
+            <table class="t">
+              <thead><tr><th>업종</th><th class="n">표본</th><th class="n">확보율</th></tr></thead>
+              <tbody>
+                <tr><td>제조</td><td class="n muted">선정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>건설</td><td class="n muted">선정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>도소매</td><td class="n muted">선정 전</td><td class="n muted">측정 전</td></tr>
+                <tr><td>부동산 임대</td><td class="n muted">선정 전</td><td class="n muted">측정 전</td></tr>
+              </tbody>
+            </table>
+            <p class="src">70%는 예시이며 기준이 아닙니다. 낮은 확보율 지표는 참고로 낮추거나 제외합니다.</p>
+          </div>
+          <div class="panel mk-wrap"><i class="mk">6</i>
+            <div class="panel-h"><h2>사용자 비교 실험</h2><span class="sub">순서 교차</span></div>
+            <table class="t">
+              <tbody>
+                <tr><td class="small">검토 시간</td><td class="n muted">측정 전</td></tr>
+                <tr><td class="small">누락 건수</td><td class="n muted">측정 전</td></tr>
+                <tr><td class="small">메모 수정량</td><td class="n muted">측정 전</td></tr>
+                <tr><td class="small">참여 인원 · 과제</td><td class="n muted">미정</td></tr>
+              </tbody>
+            </table>
+            <p class="src">소규모 결과를 은행 전체 효과로 일반화하지 않습니다.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <aside class="desc">
+      <h2>화면 설명</h2>
+      <p class="lead">검증 계획과 결과를 기록하는 운영 화면 구성안. 별도 화면으로 구현할지 문서로 관리할지는 미정이다. 모든 값은 측정 후에만 채운다.</p>
+      <ol>
+        <li><span class="n">1</span><div><h3>표본 구분</h3><p>기능 15·정답지 5(논의 필요), 추출 시트 40, 계정 확보 업종별 5 이상, 모델 표본을 목적별로 분리 표시한다.</p><div class="ids"><span class="id">N-F25</span><span class="id">N-R28</span></div></div></li>
+        <li><span class="n">2</span><div><h3>추출 정밀도·재현율</h3><p>업종 × 항목 격자. 측정 전 칸은 값이 아닌 상태로 남긴다.</p><div class="ids"><span class="id">N-F25</span><span class="id u">N-U18</span></div></div></li>
+        <li><span class="n">3</span><div><h3>미검출 우선 보완</h3><p>기획안 인용 수치임을 머리글에 명시하고, 원인 분류(규칙 누락/공시 없음/형식 차이)를 기록한다.</p><div class="ids"><span class="id">N-F25</span><span class="id u">N-U19</span></div></div></li>
+        <li><span class="n">4</span><div><h3>모델 비교</h3><p>재무 기준 vs 결합 모델을 같은 평가셋에서 비교. 유형별 사건 수·업종 구성·한계를 함께 공개한다.</p><div class="ids"><span class="id">N-F19</span><span class="id">N-R22</span><span class="id u">N-U05</span></div></div></li>
+        <li><span class="n">5</span><div><h3>계정 확보율</h3><p>표준계정 / 계정명 / 없음으로 확보 방식을 나누고 업종별 확보율과 지표 조정 사유를 남긴다.</p><div class="ids"><span class="id">N-F35</span><span class="id">N-R37</span></div></div></li>
+        <li><span class="n">6</span><div><h3>사용자 비교 실험</h3><p>시간·누락·메모 수정량과 측정 조건. 현직자 의견은 원기록으로 연결한다.</p><div class="ids"><span class="id">N-F26</span><span class="id">N-R29</span><span class="id u">N-U09</span></div></div></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>N-S01 기업 검색·업종 선택</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+<style>
+  .result { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px; border-radius: 6px; border: 1px solid var(--line); }
+  .result.on { border-color: var(--accent); background: var(--accent-weak); }
+  .result h3 { font-size: 14px; font-weight: 600; }
+  .result p { font-size: 12px; color: var(--ink-2); grid-column: 1 / -1; }
+  .dlg { background: var(--surface); border: 1px solid var(--line-2); border-radius: 8px; box-shadow: 0 12px 32px rgba(20,24,31,.16); padding: 18px; }
+  .kv { display: grid; grid-template-columns: 120px 1fr; gap: 8px 12px; font-size: 13px; }
+  .kv dt { color: var(--ink-3); }
+  .kv dd { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="N-S01" data-name="기업 검색·업종 선택" data-f="N-F01 · F04 · F30" data-r="N-R01 · R02 · R06 · R32" data-p="05 / 14"></header>
+  <div class="sheet-body">
+    <div class="app" data-active="S01">
+      <main class="main">
+        <div class="page-h">
+          <div><h1>기업 검색·업종 선택</h1><p>상장사(코넥스 포함) 중 4개 대상 업종을 검토합니다. 기업을 고르면 적용 업종과 회계 범위를 확인한 뒤 분석을 시작합니다.</p></div>
+        </div>
+
+        <div class="panel mk-wrap"><i class="mk">1</i>
+          <div class="row" style="gap:12px">
+            <div class="input lg" style="flex:1">한결정밀<span class="muted small" style="margin-left:auto">회사명 · 종목코드 · 고유번호</span></div>
+            <button class="btn pri" style="height:44px">검색</button>
+          </div>
+          <div class="row" style="margin-top:12px; flex-wrap:wrap">
+            <span class="small muted" style="width:64px">대상 업종</span>
+            <span class="chip on">전체 4개</span><span class="chip">제조</span><span class="chip">건설</span><span class="chip">도소매</span><span class="chip">부동산 임대</span>
+            <span class="small muted" style="margin-left:16px">제외</span>
+            <span class="chip off">장비·물품 렌탈</span><span class="chip off">운수·창고</span><span class="chip off">금융·보험</span><span class="chip off">지주회사</span><span class="chip off">스팩</span><span class="chip off">부동산 관리·중개</span>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 420px 1fr">
+          <div class="panel mk-wrap"><i class="mk">2</i>
+            <div class="panel-h"><h2>검색 결과</h2><span class="sub">3건</span></div>
+            <div class="stack">
+              <div class="result on"><h3>한결정밀(주)</h3><span class="st acc plain">제조</span><p>유가증권 · 고유번호 00981234 · 12월 결산 · 최근 공시 2026.03.18 사업보고서</p></div>
+              <div class="result"><h3>한결정밀엔지니어링(주)</h3><span class="st acc plain">제조</span><p>코스닥 · 고유번호 01245567 · 12월 결산 · 동명 유사 기업</p></div>
+              <div class="result"><h3>한결정밀렌탈(주)</h3><span class="st none plain">대상 아님</span><p>코스닥 · 장비·물품 렌탈(N76) — 분석 대상 업종이 아니어서 선택할 수 없습니다.</p></div>
+            </div>
+            <div class="sep"></div>
+            <div class="mk-wrap" style="padding-top:4px"><i class="mk">5</i>
+              <div class="between"><div><b style="font-size:13px">DART에 없는 기업인가요?</b><p class="small muted">재무 수치를 직접 입력해 검토할 수 있습니다. 자동 수집값과 구분해 저장됩니다.</p></div><button class="btn sm">직접 입력</button></div>
+            </div>
+          </div>
+
+          <div class="stack" style="gap:16px">
+            <div class="panel mk-wrap"><i class="mk">3</i>
+              <div class="panel-h"><h2>적용 기준 확인</h2><span class="st ok">판정 완료</span></div>
+              <div class="grid g2" style="gap:24px">
+                <dl class="kv">
+                  <dt>DART 업종코드</dt><dd>C29199 · 그 외 기타 일반목적용 기계</dd>
+                  <dt>매핑 결과</dt><dd><b>제조</b> · 세부분류 C29 기타 기계 및 장비</dd>
+                  <dt>판정 근거</dt><dd>최장 접두 코드 C29 일치 (코드사전 v0.2)</dd>
+                  <dt>복합 여부</dt><dd>해당 없음 · 부문 매출 단일 부문 100%</dd>
+                </dl>
+                <dl class="kv">
+                  <dt>결산월</dt><dd>12월</dd>
+                  <dt>회계 범위</dt><dd><span class="seg"><span class="on">연결 (CFS)</span><span>별도 (OFS)</span></span></dd>
+                  <dt>분석 기간</dt><dd><span class="input" style="display:inline-flex;height:30px">2025 사업보고서 ▾</span> <span class="small muted">비교: 2024, 2023</span></dd>
+                  <dt>정정 공시</dt><dd>없음 · 접수번호 20260318000412</dd>
+                </dl>
+              </div>
+              <div class="sep"></div>
+              <div class="between">
+                <p class="small muted">연결재무제표를 우선 사용합니다. 연결이 없으면 별도로 전환하고 상단 바에 표시합니다.</p>
+                <div class="row"><button class="btn">업종 변경</button><button class="btn pri">이 기준으로 분석 시작</button></div>
+              </div>
+            </div>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr">
+              <div class="mk-wrap"><i class="mk">4</i>
+                <div class="dlg">
+                  <div class="between" style="margin-bottom:12px"><b style="font-size:15px">업종 수동 변경</b><span class="small muted">닫기</span></div>
+                  <div class="stack" style="gap:12px">
+                    <div class="field"><label>현재 판정</label><div class="input">제조 · C29 기타 기계 및 장비</div></div>
+                    <div class="field"><label>변경할 업종</label><div class="input">건설 ▾</div></div>
+                    <div class="field"><label>변경 사유 (필수)</label><div class="input" style="height:56px;align-items:flex-start;padding-top:8px">플랜트 EPC 부문 매출이 주력으로 확인됨</div></div>
+                    <div class="field"><label>근거 원문 (필수)</label><div class="input">II.1 사업의 개요 · 부문별 매출 표 ▸</div></div>
+                    <div class="note hyp">변경 권한과 복합 판정 비중은 미정입니다(N-U15). 변경 전후 기준이 기록되고 변경 기준으로 재분석합니다.</div>
+                    <div class="row" style="justify-content:flex-end"><button class="btn">취소</button><button class="btn pri">변경 후 재분석</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-h"><h2>판정 상태별 화면 처리</h2></div>
+                <table class="t">
+                  <tbody>
+                    <tr><td><span class="st ok">판정 완료</span></td><td class="small">4개 업종 중 하나로 매핑. 분석 시작 가능</td></tr>
+                    <tr><td><span class="st caut">복합</span></td><td class="small">부문 매출 근거와 후보 업종 두 개를 함께 표시. 담당자가 하나를 골라야 시작</td></tr>
+                    <tr><td><span class="st none">미분류</span></td><td class="small">미분류로 유지하고 임의 배정하지 않음. 수동 변경만 가능</td></tr>
+                    <tr><td><span class="st none plain">대상 아님</span></td><td class="small">제외 업종. 결과 목록에 남기되 선택 불가</td></tr>
+                    <tr><td><span class="st watch">미수집 기간</span></td><td class="small">선택 기간 보고서 없음. 가장 가까운 수집 기간을 제안</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <aside class="desc">
+      <h2>화면 설명</h2>
+      <p class="lead">검토 흐름의 첫 단계. 기업을 식별하고 업종·기간·회계 범위를 확정해 이후 모든 화면의 기준으로 쓴다.</p>
+      <ol>
+        <li><span class="n">1</span><div><h3>검색과 업종 필터</h3><p>회사명·종목코드·DART 고유번호로 검색한다. 대상 4개 업종 필터와 제외 업종을 함께 보여 범위를 분명히 한다. 렌탈은 필터와 분석 어디에도 포함하지 않는다.</p><div class="ids"><span class="id">N-F01</span><span class="id">N-R01</span></div></div></li>
+        <li><span class="n">2</span><div><h3>검색 결과</h3><p>동명·유사 기업을 구분할 시장·고유번호·결산월을 표시한다. 제외 업종 기업은 “대상 아님”으로 남기되 선택할 수 없다.</p><div class="ids"><span class="id">N-F01</span><span class="id">N-F02</span></div></div></li>
+        <li><span class="n">3</span><div><h3>적용 기준 확인</h3><p>DART 업종코드 → 최장 접두 코드 매핑 → 업종·세부분류. 결산월, 연결/별도, 분석 기간, 정정 공시와 접수번호를 확인한 뒤 분석을 시작한다.</p><div class="ids"><span class="id">N-F30</span><span class="id">N-R02</span><span class="id">N-R32</span><span class="id u">N-U02</span></div></div></li>
+        <li><span class="n">4</span><div><h3>업종 수동 변경</h3><p>사유와 근거 원문을 필수로 받는다. 변경 전후 기준을 기록하고 변경 기준으로 재분석한다. 권한·복합 비중은 미정.</p><div class="ids"><span class="id">N-F30</span><span class="id u">N-U15</span></div></div></li>
+        <li><span class="n">5</span><div><h3>직접 입력 진입</h3><p>DART 조회가 안 되는 기업은 수치·출처·기준일을 직접 입력한다. 자동 수집값과 별도로 관리하고 충돌 시 표시한다.</p><div class="ids"><span class="id">N-F04</span><span class="id">N-R06</span><span class="id u">N-U08</span></div></div></li>
+      </ol>
+      <div class="block">
+        <h4>예외</h4>
+        <ul>
+          <li>검색 결과 0건: 입력어와 대상 업종을 다시 보여주고 직접 입력을 제안한다.</li>
+          <li>DART 응답 실패: “조회 실패”로 표시하고 결과 없음과 구분한다.</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

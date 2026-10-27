@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>공통 UI 가이드</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+<style>
+  .sw { display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: center; padding: 8px 0; }
+  .sw i { width: 56px; height: 40px; border-radius: 6px; display: block; border: 1px solid var(--line); }
+  .sw b { font-size: 13px; display: block; }
+  .sw span { font-size: 12px; color: var(--ink-3); }
+  .ts > div { display: grid; grid-template-columns: 140px 1fr; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .ts > div:last-child { border-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="UI" data-name="공통 UI 가이드와 상태 표기" data-f="N-F24 · F37 · F38 · F41" data-r="N-R27 · R39 · R40" data-p="04 / 14"></header>
+  <div class="grid" style="grid-template-columns: 1fr 1fr 1fr; gap:24px">
+    <div class="stack" style="gap:24px">
+      <div class="panel">
+        <div class="panel-h"><h2>색 역할</h2><span class="sub">바탕 하나 · 글자 하나 · 강조 하나</span></div>
+        <div class="sw"><i style="background:#EEF0F3"></i><div><b>바탕 #EEF0F3</b><span>화면 배경</span></div></div>
+        <div class="sw"><i style="background:#FFFFFF"></i><div><b>표면 #FFFFFF</b><span>패널 · 표</span></div></div>
+        <div class="sw"><i style="background:#14181F"></i><div><b>글자 #14181F</b><span>본문 · 수치</span></div></div>
+        <div class="sw"><i style="background:#0E5E50"></i><div><b>강조 #0E5E50</b><span>주 버튼 · 현재 위치 · 자사 점</span></div></div>
+        <div class="sw"><i style="background:#2F3B4B"></i><div><b>차트 #2F3B4B · #8C96A3 · #C6CCD4</b><span>계열은 명도 단계로 구분 (무지개 색 금지)</span></div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>글자</h2><span class="sub">IBM Plex Sans KR · 숫자 고정폭(tabular)</span></div>
+        <div class="ts">
+          <div><span class="small muted">핵심 수치 40</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">257억원</span></div>
+          <div><span class="small muted">화면 제목 22</span><span style="font-size:22px;font-weight:700">핵심 재무 요약</span></div>
+          <div><span class="small muted">패널 제목 15</span><span style="font-size:15px;font-weight:600">공통 핵심 비율</span></div>
+          <div><span class="small muted">본문 13–14</span><span>영업이익을 먼저 보고 현금흐름과 비교합니다.</span></div>
+          <div><span class="small muted">보조 11.5–12</span><span class="small muted">출처 · 단위 · 한계</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack" style="gap:24px">
+      <div class="panel">
+        <div class="panel-h"><h2>징후 단계</h2><span class="sub">색과 텍스트를 항상 함께</span></div>
+        <table class="t">
+          <tbody>
+            <tr><td><span class="st warn">경고</span></td><td class="small">패널 최상단 고정 · 원문 확인 필수 항목</td></tr>
+            <tr><td><span class="st caut">주의</span></td><td class="small">확인 목록에 추가 · 근거 원문 연결</td></tr>
+            <tr><td><span class="st watch">관찰</span></td><td class="small">추세 차트와 업종 내 위치만 표시</td></tr>
+          </tbody>
+        </table>
+        <p class="src">단계 없음을 “정상”으로 표시하지 않습니다. 은행 자산건전성 분류(정상·요주의·고정…)의 용어를 쓰지 않습니다.</p>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>주석 검출 4상태</h2></div>
+        <table class="t">
+          <tbody>
+            <tr><td><span class="st ok">검출</span></td><td class="small">원문 문장과 위치를 연결</td></tr>
+            <tr><td><span class="st plain" style="background:var(--surface-3);color:var(--ink-2)">공시상 없음</span></td><td class="small">원문에 “해당사항 없음”이 명시된 경우만</td></tr>
+            <tr><td><span class="st none">미검출</span></td><td class="small">부재·정상으로 바꾸지 않음 · 확인 항목 생성</td></tr>
+            <tr><td><span class="st warn plain">추출 실패</span></td><td class="small">파싱·참조 추적 실패 · 0으로 대체 금지</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>값과 기준의 출처 표기</h2></div>
+        <table class="t">
+          <tbody>
+            <tr><td><span class="tag hyp">팀 가설</span></td><td class="small">현직자 확인 전 기준값 · 점선 기준선</td></tr>
+            <tr><td><span class="tag off">공식 통계</span></td><td class="small">한국은행 기업경영분석 등 · 모집단·연도 병기</td></tr>
+            <tr><td><span class="tag">현직자 확인</span></td><td class="small">확인일·확인자 기록 후 사용</td></tr>
+            <tr><td><span class="tag apx">근사</span></td><td class="small">이자비용 대신 금융원가 등</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="stack" style="gap:24px">
+      <div class="panel">
+        <div class="panel-h"><h2>차트 원칙</h2><span class="sub">차트 하나에 질문 하나</span></div>
+        <div class="stack" style="gap:14px">
+          <div><div class="small muted" style="margin-bottom:4px">결측 연도: 회색 점선 원 + “자료 없음”</div><div data-chart="line" data-d='{"w":480,"h":150,"min":0,"max":2.5,"cats":["2021","2022","2023","2024","2025"],"ref":{"v":1.0,"label":"1.0배 팀 가설선"},"series":[{"name":"EBITDA 이자보상","color":"#2F3B4B","values":[1.9,1.7,null,1.1,0.8],"labels":true}]}'></div></div>
+          <div><div class="small muted" style="margin-bottom:4px">불릿: 값 막대 · 전기 눈금 · 팀 가설 기준선 (게이지 대체)</div><div data-chart="bullet" data-d='{"w":480,"max":200,"value":142,"prev":96,"ref":100,"refLabel":"팀 가설 100%","valueLabel":"142%","color":"#8F5400"}'></div></div>
+          <div><div class="small muted" style="margin-bottom:4px">업종 내 위치: 비교기업 점 · 중앙값선 · 자사 강조</div><div data-chart="strip" data-d='{"w":480,"h":44,"min":-4,"max":18,"peers":[-2.1,1.4,2.8,3.5,4.2,4.9,5.3,5.8,6.1,6.4,7.0,7.7,8.3,9.1,10.4,12.2,14.8],"self":9.5,"median":6.1,"medianLabel":"6.1%"}'></div></div>
+        </div>
+        <div class="sep"></div>
+        <ul class="small" style="padding-left:16px;color:var(--ink-2);display:flex;flex-direction:column;gap:4px">
+          <li>게이지·레이더 차트를 쓰지 않습니다.</li>
+          <li>단위·기준일·연결/별도를 차트 제목 옆에 적습니다.</li>
+          <li>비교 표본이 부족하면 순위 대신 “비교 보류”.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>조작 요소</h2></div>
+        <div class="row" style="flex-wrap:wrap;gap:10px">
+          <button class="btn pri">이 기준으로 분석 시작</button><button class="btn">업종 변경</button><button class="btn sm">원문</button>
+          <span class="seg"><span class="on">연결</span><span>별도</span></span>
+          <span class="chip on">제조</span><span class="chip">건설</span><span class="chip off">장비·물품 렌탈</span>
+          <span class="row small"><span class="chk on"></span>확인 완료</span><span class="row small"><span class="chk"></span>미확인</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>미정 질문과 화면 영향</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="미정" data-name="미정 질문과 화면 영향" data-f="–" data-r="N-U01~U20" data-p="14 / 14"></header>
+  <div class="panel">
+    <div class="panel-h"><h2>화면 설계에 걸린 미정 질문 20개</h2><span class="sub">요구사항 정의서 v0.0.4 순서 유지 · 답이 나오면 해당 화면의 표시를 바꿉니다</span></div>
+    <table class="t">
+      <thead><tr><th style="width:80px">ID</th><th style="width:130px">구분</th><th>질문 요지</th><th style="width:150px">영향 화면</th><th>화면에서 지금 처리하는 방식</th></tr></thead>
+      <tbody>
+        <tr><td><b>N-U01</b></td><td>표본/라벨</td><td class="small">위험 사건 원천의 기간·범위·누락, 유형별 심각도, 사건·비발생 표본 수</td><td class="small">S05 · S08</td><td class="small">사건 유형 옆 “심각도 미정” 태그, 모델 표본 “미확정”</td></tr>
+        <tr><td><b>N-U02</b></td><td>대상 업종</td><td class="small">세부분류 수준, 기능 15·정답지 5, 분석 연도·분기</td><td class="small">S01 · S08</td><td class="small">세부분류 표시, 표본 “논의 필요”</td></tr>
+        <tr><td><b>N-U03</b></td><td>시점 분리</td><td class="small">학습·검증·평가 구간과 12개월 결과 확정 기준</td><td class="small">S05</td><td class="small">보류 사유에 표시</td></tr>
+        <tr><td><b>N-U04</b></td><td>주석 구조</td><td class="small">금액/유형/상태 코드, 원문 위치 저장, 검증 항목 전달 절차</td><td class="small">S04</td><td class="small">추출 표 열 구성은 저장 항목 기준 초안</td></tr>
+        <tr><td><b>N-U05</b></td><td>모델/성능</td><td class="small">결합 모델·결측·불균형·보정, 수용 기준, 표시/보류 기준</td><td class="small">S05 · S08</td><td class="small">상태 A(보류)를 기본으로 설계</td></tr>
+        <tr><td><b>N-U06</b></td><td>비교/규칙</td><td class="small">업종별 비교 표본 최소 수, 건설·임대 업종 기준 규칙</td><td class="small">S02 · S03</td><td class="small">표본 수 n을 머리에 표시, 부족 시 “비교 보류”</td></tr>
+        <tr><td><b>N-U07</b></td><td>뉴스/AI</td><td class="small">LLM 제공자·비용·한도, 뉴스 수집 방식·검수 기준</td><td class="small">S04 · S06</td><td class="small">링크만 제공하는 대체 상태 포함</td></tr>
+        <tr><td><b>N-U08</b></td><td>저장/운영</td><td class="small">메모·확인 상태 저장 단위, 사용자 구분, 권한·보존</td><td class="small">S07</td><td class="small">확인자·시각 표기, 재생성 충돌 미정 안내</td></tr>
+        <tr><td><b>N-U09</b></td><td>검수/일정</td><td class="small">기능·주석·뉴스·실험 목표치와 승인자, 제출 일정</td><td class="small">S08</td><td class="small">모든 결과 칸 “측정 전”</td></tr>
+        <tr><td><b>N-U10</b></td><td>확장</td><td class="small">외부 통계·ECOS, 비상장 확대, PDF 출력 조건</td><td class="small">S07</td><td class="small">PDF 버튼을 두지 않음</td></tr>
+        <tr><td><b>N-U11</b></td><td>비율 기준</td><td class="small">회전율 분모 기말/연평균, 첫해 처리</td><td class="small">S02 · S03 · S04</td><td class="small">“기말 기준” 상태 배지, 전기 없음은 “자료 없음”</td></tr>
+        <tr><td><b>N-U12</b></td><td>업종 기준값</td><td class="small">30%·50%·1.5배·70%·+30일 확정 방법</td><td class="small">S03 · S04 · S04-2</td><td class="small">점선 기준선 + “팀 가설” 라벨</td></tr>
+        <tr><td><b>N-U13</b></td><td>이자비용</td><td class="small">이자비용 확보 위치, 금융원가 근사 허용·표시</td><td class="small">S02 · S03</td><td class="small">“근사” 태그</td></tr>
+        <tr><td><b>N-U14</b></td><td>임대보증금</td><td class="small">실질 차입 포함 여부</td><td class="small">S02 · S04-2</td><td class="small">별도 행으로 표시</td></tr>
+        <tr><td><b>N-U15</b></td><td>업종 판정</td><td class="small">복합 판정 비중, 수동 변경 권한·기록</td><td class="small">S01</td><td class="small">변경 대화상자에 미정 안내</td></tr>
+        <tr><td><b>N-U16</b></td><td>산업평균</td><td class="small">한국은행 업종 수준·연도, 모집단 차이 표시</td><td class="small">S03</td><td class="small">“한국은행 참고” 열을 회색으로 분리, 모집단 병기</td></tr>
+        <tr><td><b>N-U17</b></td><td>징후 단계</td><td class="small">경고·주의·관찰 조건 수치와 건전성 관점 매핑 확정</td><td class="small">S04 · S07</td><td class="small">“규칙 v0.2 · 팀 가설” 표시</td></tr>
+        <tr><td><b>N-U18</b></td><td>주석 추출 규칙</td><td class="small">검색어 사전 버전, 표/본문 우선순위, 미검출 원인 판정</td><td class="small">S04 · S08</td><td class="small">검색어 사전 버전 표시</td></tr>
+        <tr><td><b>N-U19</b></td><td>추출 표본</td><td class="small">미검출 다수 항목의 보완 범위·합격 기준</td><td class="small">S08</td><td class="small">“기획안 인용 · 독립 검증 아님”</td></tr>
+        <tr><td><b>N-U20</b></td><td>시각화</td><td class="small">위치 표시 최소 표본, 업종별 차트 우선순위, SVG 구현 범위</td><td class="small">S04 · S04-2</td><td class="small">업종별 차트 2~4개 배치안 제시, 우선순위는 팀 결정</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

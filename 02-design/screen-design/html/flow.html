@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>정보 구조와 서비스 흐름</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<style>
+  .flowrow { display: grid; grid-template-columns: repeat(7, 1fr); gap: 28px; position: relative; }
+  .node { background: var(--surface); border: 1px solid var(--line-2); border-radius: 8px; padding: 14px; position: relative; }
+  .node:not(:last-child)::after { content: '→'; position: absolute; right: -24px; top: 18px; font-size: 18px; color: var(--ink-3); }
+  .node .id { margin-bottom: 8px; display: inline-block; }
+  .node h3 { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .node ul { list-style: none; font-size: 12px; color: var(--ink-2); display: flex; flex-direction: column; gap: 4px; }
+  .node.k { border-color: var(--accent); box-shadow: inset 0 3px 0 var(--accent); }
+  .layer { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: stretch; }
+  .layer > b { font-size: 13px; background: var(--surface); border-radius: 8px; padding: 14px; display: flex; align-items: center; }
+  .boxes { display: flex; gap: 8px; flex-wrap: wrap; }
+  .boxes span { font-size: 12.5px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; }
+  .boxes span small { display: block; font-size: 11px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="IA" data-name="정보 구조와 서비스 흐름" data-f="전체" data-r="전체" data-p="03 / 14"></header>
+  <div class="stack" style="gap:24px">
+    <div class="panel">
+      <div class="panel-h"><h2>검토 흐름</h2><span class="sub">좌측 내비게이션 순서와 같습니다. 어느 단계든 직접 이동할 수 있고, 상단 바의 기업·업종·보고서·회계 범위·기준일이 모든 화면에 고정됩니다.</span></div>
+      <div class="flowrow">
+        <div class="node"><span class="id">N-S01</span><h3>기업·업종 선택</h3><ul><li>검색 · 4개 업종 필터</li><li>업종 판정 · 세부분류</li><li>결산월 · 연결/별도</li><li>수동 변경 사유·근거</li><li>직접 입력</li></ul></div>
+        <div class="node"><span class="id">N-S02</span><h3>핵심 재무 요약</h3><ul><li>영업이익 우선</li><li>공통 핵심 5개 비율</li><li>비율 5개 묶음</li><li>상환능력</li><li>업종 강조 지표</li></ul></div>
+        <div class="node"><span class="id">N-S03</span><h3>실적 변동·현금흐름</h3><ul><li>영업이익 증감 분해</li><li>영업이익 vs 영업CF</li><li>영업순환 · CCC</li><li>예외 표시</li><li>3개년 · 동종 비교</li></ul></div>
+        <div class="node k"><span class="id">N-S04</span><h3>주석·위험징후 패널</h3><ul><li>경고·주의·관찰</li><li>업종 우선 지표 · 5개년</li><li>업종 맞춤 차트</li><li>주석 자동 추출 · 4상태</li><li>원문 근거 카드</li></ul></div>
+        <div class="node"><span class="id">N-S05</span><h3>위험 사건 예측</h3><ul><li>보류 (기본)</li><li>12개월 확률 (검증 후)</li><li>예측 대상 사건</li><li>입력 영향 · 원문</li><li>세 상태 구분</li></ul></div>
+        <div class="node"><span class="id">N-S06</span><h3>관련 뉴스</h3><ul><li>검수된 기사</li><li>제외 기사</li><li>검수 단계</li><li>한계 · 링크 대체</li></ul></div>
+        <div class="node"><span class="id">N-S07</span><h3>체크·검토 메모</h3><ul><li>확인 항목 체크</li><li>부실징후 17항목</li><li>메모 초안 수정·복사</li><li>버전 바</li></ul></div>
+      </div>
+      <div class="grid g3" style="margin-top:20px">
+        <div class="note"><b>S04 → S07</b> 주의·경고 징후와 미검출·추출 실패 항목이 확인 항목으로 자동 추가됩니다. 확인 완료는 담당자만 표시합니다.</div>
+        <div class="note"><b>S03 → S07</b> 원문 확인이 필요한 현금흐름 항목(단기차입의 장기부채 상환 등)이 추가됩니다.</div>
+        <div class="note"><b>S05 ↔ S04</b> 예측 보류 시 현재 징후는 S04에서 확인하도록 안내합니다. 징후 단계와 예측 확률은 별개 결과입니다.</div>
+      </div>
+    </div>
+
+    <div class="grid" style="grid-template-columns: 1.3fr 1fr; gap:24px">
+      <div class="panel">
+        <div class="panel-h"><h2>데이터 흐름과 화면 연결</h2><span class="sub">화면 없는 공통 기능이 화면에 공급하는 정보</span></div>
+        <div class="stack" style="gap:10px">
+          <div class="layer"><b>수집·원천</b><div class="boxes"><span>OpenDART 재무·개황<small>N-F02</small></span><span>공시서류 원본 · 목차 단위 저장<small>N-F02</small></span><span>주요사항보고서 · 감사보고서<small>N-F13</small></span><span>뉴스 후보<small>N-F12</small></span><span>한국은행 기업경영분석<small>N-F08</small></span></div></div>
+          <div class="layer"><b>표준화·정의</b><div class="boxes"><span>재무 표준화·정합성<small>N-F03</small></span><span>업종 판정<small>N-F30</small></span><span>산식·계정 사전<small>N-F31</small></span><span>계정 확보 점검<small>N-F35</small></span></div></div>
+          <div class="layer"><b>분석·추출</b><div class="boxes"><span>상환능력·영업순환<small>N-F32 · F33</small></span><span>징후 지표·단계<small>N-F36 · F37</small></span><span>공통/업종 주석 추출<small>N-F39 · F40</small></span><span>추출 저장·검출 상태<small>N-F41</small></span></div></div>
+          <div class="layer"><b>모델</b><div class="boxes"><span>12개월 라벨·추적<small>N-F14</small></span><span>특징 구성<small>N-F15</small></span><span>시점 분리<small>N-F16</small></span><span>기준·결합 모델<small>N-F17 · F18</small></span><span>성능·보정 비교<small>N-F19 → S08</small></span></div></div>
+          <div class="layer"><b>화면</b><div class="boxes"><span>S01~S07 검토 흐름</span><span>S08 검증 기록</span><span>출처·상태 공통 표시<small>N-F24</small></span></div></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>화면 공통 구성</h2></div>
+        <table class="t">
+          <tbody>
+            <tr><td><b>상단 바</b></td><td class="small">워드마크 · 기업 · 적용 업종 · 기준 보고서 · 회계 범위(연결/별도) · 기준일 · 기업 변경</td></tr>
+            <tr><td><b>좌측 내비</b></td><td class="small">검토 흐름 7단계와 단계별 요약 수치(주의 2 · 보류 · 미확인 6), 검증 기록, 서비스 한계 안내</td></tr>
+            <tr><td><b>페이지 머리</b></td><td class="small">화면 제목 + 이 화면에서 확인할 한 문장 + 화면 단위 조작(연결/별도, 기간, 규칙 보기)</td></tr>
+            <tr><td><b>패널</b></td><td class="small">제목 · 단위/기준 부제 · 내용 · 출처와 한계 한 줄</td></tr>
+            <tr><td><b>화면 크기</b></td><td class="small">설계 기준 1440 × 900 데스크톱. 은행 업무 PC 기준이며 모바일은 범위 밖</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

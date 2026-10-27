@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>N-S05 위험 사건 예측과 근거</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+<style>
+  .prob { font-size: 64px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+  .prob small { font-size: 22px; font-weight: 600; margin-left: 2px; }
+  .hold { display: grid; place-items: center; text-align: center; padding: 28px 16px; background: var(--surface-2); border-radius: 8px; }
+  .hold .big { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin: 8px 0 6px; }
+  .evt { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .evt:last-child { border-bottom: 0; }
+  .evt p { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="N-S05" data-name="위험 사건 예측과 근거" data-f="N-F13~16 · F18 · F20 · F24" data-r="N-R16~23 · R27" data-p="10 / 14"></header>
+  <div class="sheet-body">
+    <div class="app" data-active="S05">
+      <main class="main">
+        <div class="page-h">
+          <div><h1>12개월 상환·연체 위험 사건 예측</h1><p>기준 공시일 이후 12개월 안에 공시로 확인되는 상환·연체 위험 사건이 발생할 확률입니다. 실제 은행 대출 연체율이나 내부 등급이 아닙니다.</p></div>
+          <div class="acts"><button class="btn sm">모델 카드</button></div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1fr">
+          <div class="panel mk-wrap"><i class="mk">1</i>
+            <span class="variant">상태 A · 기본 · 모델 검증 전</span>
+            <div class="hold">
+              <span class="st none">보류</span>
+              <div class="big">예측 확률을 표시하지 않습니다</div>
+              <p class="small" style="color:var(--ink-2);max-width:440px">결합 모델 v0.1이 학습·평가 전입니다. 검증 전에는 임의 확률을 실제 결과처럼 보여주지 않습니다. 현재 징후는 S04 패널에서 확인하세요.</p>
+              <div class="row" style="margin-top:14px;flex-wrap:wrap;justify-content:center">
+                <span class="tag">학습 표본 미확정 N-U01</span><span class="tag">시점 분리 미정 N-U03</span><span class="tag">표시 기준 미정 N-U05</span>
+              </div>
+            </div>
+            <div class="sep"></div>
+            <table class="t">
+              <tbody>
+                <tr><td class="muted small">보류 사유 코드</td><td class="small">미학습 · 미검증 · 입력 부족 · 업종 표본 부족 중 해당 항목 표시</td></tr>
+                <tr><td class="muted small">이 기업 입력 상태</td><td class="small">재무 특징 24/26 확보 · 주석 특징 7/9 검수 완료</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel mk-wrap"><i class="mk">2</i>
+            <span class="variant">상태 B · 검증 완료 후 · 화면 설계용 예시 값</span>
+            <div class="between" style="align-items:flex-end">
+              <div>
+                <div class="small muted">재무·주석 결합 모델 추정 확률</div>
+                <div class="prob">6.8<small>%</small></div>
+              </div>
+              <table class="t" style="width:300px">
+                <tbody>
+                  <tr><td class="muted small">재무 기준 모델</td><td class="n">4.9%</td></tr>
+                  <tr><td class="muted small">평가셋 사건 비율</td><td class="n">3.1%</td></tr>
+                  <tr><td class="muted small">예측 기간</td><td class="n">2026.03.18 – 2027.03.17</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sep"></div>
+            <div class="grid g3 small">
+              <div><span class="muted">모델 · 특징 버전</span><br><b>결합 v1.0 · 특징 v0.4</b></div>
+              <div><span class="muted">검증 상태</span><br><span class="st ok">평가 완료</span></div>
+              <div><span class="muted">평가 지표</span><br>PR-AUC · Brier · 보정 곡선 <a class="small">S08</a></div>
+            </div>
+            <p class="note" style="margin-top:12px">예시 값은 화면 배치 확인용이며 실제 모델 출력이 아닙니다. 구현 시 상태 A가 기본이며 검증 완료 조건 충족 시에만 상태 B로 전환합니다.</p>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1.25fr 1fr">
+          <div class="panel mk-wrap"><i class="mk">3</i>
+            <div class="panel-h"><h2>예측 대상 사건</h2><span class="sub">공시 원문 대조 · 유형별 심각도</span></div>
+            <div class="evt"><b>원리금 연체 · 기한이익상실</b><span class="tag">심각도 미정</span><p>실제 사건 발생만 라벨. 조건 조항의 존재는 제외</p></div>
+            <div class="evt"><b>어음·수표 지급거절</b><span class="tag">심각도 미정</span><p>최초 발생일·공시일·금액·접수번호</p></div>
+            <div class="evt"><b>회생·채권은행 관리절차 개시신청</b><span class="tag">심각도 미정</span><p>신청 사건의 최초일·유형</p></div>
+            <div class="evt"><b>감사의견 비적정 · 계속기업 불확실성</b><span class="tag">심각도 미정</span><p>당기 의견의 알려진 시점과 최초 사건일 분리</p></div>
+            <p class="src">관리종목 지정·상장폐지는 상환·연체 관련이 확인되지 않으면 제외. API 미조회는 비발생 증거가 아님.</p>
+          </div>
+
+          <div class="panel mk-wrap"><i class="mk">4</i>
+            <div class="panel-h"><h2>주요 입력 지표의 영향</h2><span class="sub">상태 B 예시 · 예측 설명용, 인과 아님</span></div>
+            <div data-chart="diverge" data-d='{"w":430,"l":190,"items":[{"name":"1년 내 만기 차입 비중 51.7%","v":0.42},{"name":"영업CF/영업이익 0.25","v":0.31},{"name":"제공 보증 ÷ 자기자본 19.7%","v":0.24},{"name":"현금전환주기 변화 +34.8일","v":0.12},{"name":"매출액영업이익률 9.5%","v":-0.28},{"name":"감사의견 적정","v":-0.35}]}'></div>
+          </div>
+
+          <div class="panel mk-wrap"><i class="mk">5</i>
+            <div class="panel-h"><h2>연결된 원문과 추가 확인</h2></div>
+            <div class="stack small">
+              <div class="between"><span>차입 만기표 · 주석 18</span><button class="btn sm ghost">원문</button></div>
+              <div class="between"><span>지급보증 · 주석 33</span><button class="btn sm ghost">원문</button></div>
+              <div class="between"><span>감사의견 · V.1</span><button class="btn sm ghost">원문</button></div>
+            </div>
+            <div class="sep"></div>
+            <h3 style="font-size:13px;margin-bottom:6px">담당자 추가 확인</h3>
+            <ul class="small" style="padding-left:16px;color:var(--ink-2);display:flex;flex-direction:column;gap:4px">
+              <li>2026.06 단기차입 300억원 차환 계획</li>
+              <li>종속회사 보증 실행 사유</li>
+              <li>내부 거래내역·담보 평가는 내부 자료로 확인</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel mk-wrap"><i class="mk">6</i>
+          <div class="between">
+            <div class="row" style="gap:24px">
+              <div class="small"><span class="muted">현재 징후 (규칙)</span> <span class="st caut">주의 2</span> <span class="st watch">관찰 3</span></div>
+              <div class="small"><span class="muted">미래 사건 확률 (모델)</span> <span class="st none">보류</span></div>
+              <div class="small"><span class="muted">담당자 확인</span> <span class="st plain" style="background:var(--surface-3)">미확인 6건</span></div>
+            </div>
+            <span class="small muted">세 상태는 서로 다른 결과입니다. 하나가 다른 하나를 대신하지 않습니다.</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <aside class="desc">
+      <h2>화면 설명</h2>
+      <p class="lead">재무·주석 결합 모델의 12개월 위험 사건 확률과 근거를 보인다. 학습·검증 전에는 확률을 표시하지 않는 보류 상태가 기본이다.</p>
+      <ol>
+        <li><span class="n">1</span><div><h3>상태 A · 보류 (기본)</h3><p>미학습·미검증·입력 부족 시 확률 대신 보류 사유와 미정 항목을 보인다. 이 기업의 특징 확보 현황을 함께 표시한다.</p><div class="ids"><span class="id">N-F20</span><span class="id">N-R23</span><span class="id u">N-U05</span></div></div></li>
+        <li><span class="n">2</span><div><h3>상태 B · 검증 완료</h3><p>결합 모델 확률을 크게, 재무 기준 모델과 평가셋 사건 비율을 참고로 둔다. 예측 기간·기준일·모델/특징 버전·검증 상태를 같은 영역에 표시한다.</p><div class="ids"><span class="id">N-F18</span><span class="id">N-F20</span><span class="id">N-R16</span><span class="id">N-R22</span></div></div></li>
+        <li><span class="n">3</span><div><h3>예측 대상 사건 정의</h3><p>라벨 4유형과 제외 기준을 화면에 고정 노출해 확률의 의미를 오해하지 않게 한다.</p><div class="ids"><span class="id">N-F13</span><span class="id">N-F14</span><span class="id">N-R17</span><span class="id u">N-U01</span></div></div></li>
+        <li><span class="n">4</span><div><h3>입력 지표 영향</h3><p>확률을 높이거나 낮춘 방향을 막대로 보인다. 설명용이며 상환·연체의 인과로 해석하지 않는다. 뉴스·LLM 출력은 입력이 아니다.</p><div class="ids"><span class="id">N-F15</span><span class="id">N-F16</span><span class="id">N-R19</span></div></div></li>
+        <li><span class="n">5</span><div><h3>원문 연결·추가 확인</h3><p>입력에 쓰인 주석 원문으로 이동하고, 공시로 확인되지 않는 사항은 담당자 확인으로 남긴다.</p><div class="ids"><span class="id">N-F20</span><span class="id">N-F24</span></div></div></li>
+        <li><span class="n">6</span><div><h3>세 상태 구분 바</h3><p>현재 징후(규칙), 미래 사건 확률(모델), 담당자 확인 완료는 별개 상태임을 화면 하단에 상시 표시한다.</p><div class="ids"><span class="id">N-F24</span><span class="id">N-R27</span></div></div></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

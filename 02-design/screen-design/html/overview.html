@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>문서 개요와 화면 목록</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<style>
+  .doc { display: grid; grid-template-columns: 560px 1fr; gap: 24px; }
+  .doc .panel h2 { font-size: 17px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="개요" data-name="문서 정보와 화면 목록" data-f="N-F01~F41" data-r="N-R01~R43" data-p="02 / 14"></header>
+  <div class="doc">
+    <div class="stack" style="gap:24px">
+      <div class="panel">
+        <div class="panel-h"><h2>문서 개정 이력</h2></div>
+        <table class="t">
+          <thead><tr><th>버전</th><th>개정일</th><th>변경 내용</th><th>작성자</th></tr></thead>
+          <tbody>
+            <tr><td>v0.0.1</td><td>2026.10.24</td><td class="small">기획안 v2.0 · 요구사항 v0.0.4 · 기능명세서 v0.0.4 · PRD v0.0.4 기준 최초 작성. 화면 8개와 위험징후 패널 업종 변형 설계.</td><td>김동혁</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>작성 기준</h2></div>
+        <div class="stack small" style="color:var(--ink-2);gap:10px">
+          <p>범위·검증 표본이 충돌하면 요구사항의 10/23 팀 결정(4개 업종 확정 · 렌탈 제외 · 검증 15/5 논의 필요)을 우선합니다.</p>
+          <p>위험징후 패널은 N-S04의 하위 영역이며 별도 화면 ID를 늘리지 않습니다. 업종별 변형은 N-S04-2 페이지로 보입니다.</p>
+          <p>징후 단계 수치(1배·3년·2년)와 업종 기준값(30%·50%·1.5배·70%·+30일)은 현직자 확인 전 팀 가설이며, 화면에서 “팀 가설”로 표시합니다.</p>
+          <p>예측 확률은 학습·검증 전 표시하지 않는 보류 상태가 기본입니다. N-S05의 확률 수치는 배치 확인용 예시입니다.</p>
+          <p>검증 결과(정밀도·재현율·모델 성능·실험 결과)는 측정 전이므로 값을 채우지 않았습니다.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>근거 문서</h2></div>
+        <table class="t small">
+          <tbody>
+            <tr><td>기획안</td><td>LoanSight_AI_기획안_v2.0.docx (2026.10.23)</td></tr>
+            <tr><td>요구사항</td><td>LoanSight AI_요구사항정의서_v0.0.4_261023.xlsx</td></tr>
+            <tr><td>기능명세</td><td>LoanSight AI_기능명세서_v0.0.4_261024.xlsx</td></tr>
+            <tr><td>PRD</td><td>LoanSight AI_PRD_v0.0.4_261024_김동혁.docx</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><h2>표기 범례</h2></div>
+        <div class="stack small">
+          <div class="row"><span class="mk" style="position:static;box-shadow:none">1</span><span>화면 요소 번호 — 오른쪽 설명 패널의 같은 번호와 대응</span></div>
+          <div class="row"><span class="id">N-F05</span><span>관련 기능 · 요구 ID</span></div>
+          <div class="row"><span class="id u">N-U13</span><span>해당 요소에 걸린 미정 질문</span></div>
+          <div class="row"><span class="tag hyp">팀 가설</span><span>현직자 확인 전 기준값</span></div>
+          <div class="row"><span class="tag apx">근사</span><span>대체 계정으로 계산한 값</span></div>
+          <div class="row"><span class="variant" style="margin:0">상태 A</span><span>같은 영역의 상태 변형</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>화면 목록</h2><span class="sub">검토 흐름 순서 · 기능명세서 v0.0.4 화면 ID 기준</span></div>
+      <table class="t">
+        <thead><tr><th>화면 ID</th><th>화면명</th><th>주요 정보</th><th>관련 기능</th><th>관련 요구</th><th>범위</th><th class="n">페이지</th></tr></thead>
+        <tbody>
+          <tr><td><b>N-S01</b></td><td>기업 검색·업종 선택</td><td class="small">4개 업종·렌탈 제외·업종명/코드·세부분류·결산월·회계 범위·수동 변경 근거·직접 입력</td><td class="small">F01 F04 F28 F30</td><td class="small">R01 R02 R06 R32</td><td>필수</td><td class="n">05</td></tr>
+          <tr><td><b>N-S02</b></td><td>핵심 재무 요약</td><td class="small">영업이익·비율 5개 묶음·공통 핵심 5개·업종 강조 지표·상환능력·산식/근사/자료 상태</td><td class="small">F05 F31 F32 F36</td><td class="small">R07 R33~35 R38</td><td>필수</td><td class="n">06</td></tr>
+          <tr><td><b>N-S03</b></td><td>실적 변동·현금흐름</td><td class="small">영업이익 증감 분해/잔차·OP vs OCF·영업순환·자사 3개년·동종/한국은행 참고 비교</td><td class="small">F06~08 F32 F33</td><td class="small">R08~10 R35 R36</td><td>필수</td><td class="n">07</td></tr>
+          <tr><td><b>N-S04</b></td><td>주석 확인과 위험징후 패널</td><td class="small">경고/주의/관찰·업종 우선 지표·5개년 추세·업종 차트·공통/업종 추출·검출 4상태·원문 카드</td><td class="small">F09~11 F36~41</td><td class="small">R11~14 R38~43</td><td>필수</td><td class="n">08 · 09</td></tr>
+          <tr><td><b>N-S05</b></td><td>위험 사건 예측과 근거</td><td class="small">12개월 상환·연체 위험 사건 확률·보류 상태·대상 사건·기준일/모델·입력 영향·원문</td><td class="small">F13~16 F18 F20</td><td class="small">R16~23 R27</td><td>필수</td><td class="n">10</td></tr>
+          <tr><td><b>N-S06</b></td><td>관련 뉴스</td><td class="small">기업/기간 기사·관련성 검수·발행일·출처·링크·누락 한계</td><td class="small">F12</td><td class="small">R15</td><td>보완</td><td class="n">11</td></tr>
+          <tr><td><b>N-S07</b></td><td>담당자 체크·검토 메모</td><td class="small">확인 항목·부실징후 17항목 점검·메모 초안 수정/복사·버전 표시</td><td class="small">F21~24 F34 F37</td><td class="small">R24~27 R36 R39</td><td>필수</td><td class="n">12</td></tr>
+          <tr><td><b>N-S08</b></td><td>검증 기록 (구성안)</td><td class="small">표본 구분·추출 정밀도/재현율·미검출 원인·계정 확보·모델 비교·사용자 실험</td><td class="small">F19 F25 F26 F35</td><td class="small">R22 R28 R29 R37</td><td>필수 · 화면 여부 미정</td><td class="n">13</td></tr>
+          <tr><td class="muted">공통</td><td class="muted">화면 없음 (백엔드)</td><td class="small muted">수집·표준화·사건 라벨·특징·시점 분리·모델 학습·운영</td><td class="small muted">F02 F03 F13~18 F27 F41</td><td class="small muted">R03~05 R16~21 R30</td><td class="muted">필수</td><td class="n muted">–</td></tr>
+          <tr><td class="muted">확장</td><td class="muted">이번 범위 아님</td><td class="small muted">추가 업종·비상장·외부 통계·PDF·지점 운영</td><td class="small muted">F28 F29</td><td class="small muted">R31</td><td class="muted">확장</td><td class="n muted">–</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

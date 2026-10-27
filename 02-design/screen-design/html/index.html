@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>LoanSight AI 화면 설계서</title>
+<link rel="stylesheet" href="sheet.css">
+<style>
+  .cover { width: 1920px; height: 1080px; margin: 0 auto; background: var(--ink); color: #fff; display: grid; grid-template-rows: auto 1fr auto; padding: 56px 72px; }
+  .cover .top { display: flex; justify-content: space-between; font-size: 15px; color: #AEB5BF; }
+  .cover h1 { font-size: 168px; font-weight: 700; letter-spacing: -0.045em; line-height: 0.95; align-self: end; }
+  .cover h1 span { color: #9FD3C7; }
+  .cover .sub { font-size: 34px; font-weight: 500; letter-spacing: -0.02em; margin-top: 24px; color: #E6E9ED; }
+  .cover .lead { font-size: 18px; color: #AEB5BF; margin-top: 16px; max-width: 980px; line-height: 1.6; }
+  .cover .bottom { display: grid; grid-template-columns: repeat(5, auto) 1fr; gap: 56px; align-items: end; padding-top: 40px; margin-top: 56px; border-top: 1px solid #2E3540; }
+  .cover .bottom div { font-size: 13px; color: #8A929D; }
+  .cover .bottom b { display: block; font-size: 17px; color: #fff; font-weight: 600; margin-top: 4px; }
+  .flow { display: flex; gap: 0; margin-top: 48px; }
+  .flow span { font-size: 15px; padding: 12px 18px; background: #1E242D; color: #E6E9ED; border-right: 2px solid var(--ink); }
+  .flow span.k { background: #0E5E50; color: #fff; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="top"><span>[KB-Bridge] AI 활용 기반 금융 데이터 과정 · 4조참치</span><span>화면 설계서 v0.0.1 · 2026.10.24 · 검토 전 초안</span></div>
+  <div style="align-self:end">
+    <h1>LoanSight <span>AI</span></h1>
+    <p class="sub">기업 여신 검토를 위한 재무정보와 상환·연체 위험징후 분석 — 화면 설계서</p>
+    <p class="lead">기획안 v2.0 · 요구사항 정의서 v0.0.4 · 기능명세서 v0.0.4 · PRD v0.0.4를 기준으로 화면 8개(N-S01~S08)와 위험징후 패널의 업종별 변형을 설계했습니다. 화면의 기업명·수치·매체명은 배치 확인용 가상 예시입니다.</p>
+    <div class="flow"><span>기업·업종 선택</span><span>핵심 재무</span><span>변동·현금흐름</span><span class="k">주석·위험징후 패널</span><span>12개월 위험 사건 예측</span><span>관련 뉴스</span><span>체크·검토 메모</span></div>
+  </div>
+  <div class="bottom">
+    <div>화면<b>8개 + 변형 1</b></div>
+    <div>연결 기능<b>N-F01~F41</b></div>
+    <div>연결 요구<b>N-R01~R43</b></div>
+    <div>미정 질문<b>N-U01~U20</b></div>
+    <div>대상 업종<b>제조 · 건설 · 도소매 · 부동산 임대</b></div>
+    <div style="text-align:right">작성 김동혁 · 검토 미정</div>
+  </div>
+</div>
+</body>
+</html>
