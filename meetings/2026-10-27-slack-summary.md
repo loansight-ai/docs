@@ -108,7 +108,7 @@ OFS 중심 분석 전환은 실제 진행 방향으로 보고됐다. 기획안·
 ## 📎 참고 자료
 
 - [Issue #31](https://github.com/loansight-ai/docs/issues/31)
-- PR: 생성 후 연결
+- [PR #32](https://github.com/loansight-ai/docs/pull/32)
 - [Notion 회의록](https://app.notion.com/p/40680be201ba817581aaf80dc6768c00)
 - [GitHub 작업 브랜치 회의록](https://github.com/loansight-ai/docs/blob/docs/31-slack-summary-2026-10-27/meetings/2026-10-27-slack-summary.md)
 - 처리 상태: 검증 중
