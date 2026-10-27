@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>N-S06 관련 뉴스</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+<style>
+  .art { display: grid; grid-template-columns: 1fr 200px; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .art:last-child { border-bottom: 0; }
+  .art h3 { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
+  .art .m { font-size: 12px; color: var(--ink-3); margin: 3px 0 6px; }
+  .art p { font-size: 13px; color: var(--ink-2); }
+  .art .side { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+  .art.out h3 { color: var(--ink-3); text-decoration: line-through; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="N-S06" data-name="관련 뉴스" data-f="N-F12" data-r="N-R15" data-p="11 / 14"></header>
+  <div class="sheet-body">
+    <div class="app" data-active="S06">
+      <main class="main">
+        <div class="page-h">
+          <div><h1>관련 뉴스</h1><p>기업과 실적 기간(2025.01–2026.03)으로 찾은 기사 중 실적 항목과 연결되는 기사만 보입니다. 기사는 원인을 확정하는 근거가 아닙니다.</p></div>
+          <div class="acts"><span class="tag" style="align-self:center">보완 기능</span></div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 340px">
+          <div class="panel mk-wrap"><i class="mk">1</i>
+            <div class="panel-h"><h2>검수된 기사 3건</h2><span class="seg"><span class="on">관련 기사</span><span>제외 기사 11</span></span></div>
+            <div class="art mk-wrap"><i class="mk">2</i>
+              <div><h3>한결정밀, 2차전지 장비 수주 확대에 재고 선확보</h3><div class="m">2025.11.04 · 산업경제신문(예시) · 원문 링크 ↗</div><p>장비 부품 선발주로 재고자산이 늘었다는 내용. S03 재고 +126억원 항목과 연결 후보.</p></div>
+              <div class="side"><span class="st ok">관련 높음</span><span class="tag">연결: 재고자산</span><span class="tag">실적 기간 내</span></div>
+            </div>
+            <div class="art">
+              <div><h3>한결정밀, 종속사 한결오토메이션 차입에 지급보증 확대</h3><div class="m">2026.01.15 · 금융시장일보(예시) · 원문 링크 ↗</div><p>보증 한도 증액 보도. S04 주석 33 지급보증 280억원 원문과 대조 필요.</p></div>
+              <div class="side"><span class="st ok">관련 높음</span><span class="tag">연결: 지급보증</span><span class="tag">공시 대조 필요</span></div>
+            </div>
+            <div class="art">
+              <div><h3>공작기계 업계, 하반기 수요 둔화로 재고 부담</h3><div class="m">2025.09.22 · 기계산업뉴스(예시) · 원문 링크 ↗</div><p>업계 전반 기사. 기업 직접 언급 1회. 업종 맥락 참고용.</p></div>
+              <div class="side"><span class="st watch">관련 보통</span><span class="tag">업종 맥락</span></div>
+            </div>
+            <div class="art out">
+              <div><h3>한결정밀공업사, 지역 봉사활동 진행</h3><div class="m">2025.12.02 · 지역신문(예시)</div><p>동명이인 기업. 자동 제외됨.</p></div>
+              <div class="side"><span class="st none plain">제외 · 동명이인</span></div>
+            </div>
+          </div>
+
+          <div class="stack" style="gap:16px">
+            <div class="panel mk-wrap"><i class="mk">3</i>
+              <div class="panel-h"><h2>검수 단계</h2></div>
+              <table class="t">
+                <tbody>
+                  <tr><td class="small">후보 검색</td><td class="n">14건</td></tr>
+                  <tr><td class="small">동명이인 제거</td><td class="n">−2</td></tr>
+                  <tr><td class="small">단순 언급 제거</td><td class="n">−4</td></tr>
+                  <tr><td class="small">중복 제거</td><td class="n">−3</td></tr>
+                  <tr><td class="small">항목 관련성 검수</td><td class="n">−2</td></tr>
+                  <tr><td class="small"><b>표시</b></td><td class="n"><b>3건</b></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="panel mk-wrap"><i class="mk">4</i>
+              <div class="panel-h"><h2>한계 안내</h2></div>
+              <p class="small" style="color:var(--ink-2)">수집 매체와 기간 밖의 중요 기사가 누락될 수 있습니다. 기사 시점과 실적 귀속 기간이 다를 수 있습니다.</p>
+              <div class="sep"></div>
+              <span class="variant">대체 상태 · 수집 불가</span>
+              <div class="note">수집·품질 검증이 어려운 경우 기사 요약 없이 검색 결과 원문 링크만 제공합니다.</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <aside class="desc">
+      <h2>화면 설명</h2>
+      <p class="lead">공시·주석을 보완하는 기사만 선별해 보인다. 모델 입력과 징후 판정에는 쓰지 않는다. 매체명은 가상 예시다.</p>
+      <ol>
+        <li><span class="n">1</span><div><h3>관련 기사 / 제외 기사</h3><p>표시 기사와 제외된 기사를 탭으로 나눠 무관 기사 유입과 중요 기사 누락을 각각 점검할 수 있게 한다.</p><div class="ids"><span class="id">N-F12</span><span class="id">N-R15</span></div></div></li>
+        <li><span class="n">2</span><div><h3>기사 행</h3><p>제목·발행일·출처·원문 링크, 연결된 재무/주석 항목, 관련성 등급. 요약은 기사 내용만 쓰고 원인을 단정하지 않는다.</p><div class="ids"><span class="id">N-F12</span><span class="id u">N-U07</span></div></div></li>
+        <li><span class="n">3</span><div><h3>검수 단계 집계</h3><p>후보 → 동명이인 → 단순 언급 → 중복 → 관련성 검수 순으로 남은 건수를 보인다.</p><div class="ids"><span class="id">N-F12</span></div></div></li>
+        <li><span class="n">4</span><div><h3>한계와 대체 상태</h3><p>누락 가능성과 기간 차이를 안내한다. 수집이 어려우면 링크만 제공하는 대체 상태로 전환한다.</p><div class="ids"><span class="id">N-F12</span><span class="id u">N-U07</span></div></div></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

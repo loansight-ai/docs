@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>N-S07 담당자 체크·메모</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+<style>
+  .ck { display: grid; grid-template-columns: 20px 1fr auto; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .ck:last-child { border-bottom: 0; }
+  .ck h3 { font-size: 13.5px; font-weight: 600; }
+  .ck p { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+  .ck.done h3 { color: var(--ink-3); }
+  .memo { background: var(--surface); border: 1px solid var(--line-2); border-radius: 6px; padding: 18px 20px; font-size: 13.5px; line-height: 1.7; }
+  .memo h4 { font-size: 13px; font-weight: 700; margin: 12px 0 4px; }
+  .memo h4:first-child { margin-top: 0; }
+  .memo .ed { background: #FFF6D6; }
+  .memo .ref { color: var(--ink-3); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="N-S07" data-name="담당자 체크·검토 메모" data-f="N-F21~24 · F34 · F37" data-r="N-R24~27 · R36 · R39" data-p="12 / 14"></header>
+  <div class="sheet-body">
+    <div class="app" data-active="S07">
+      <main class="main">
+        <div class="page-h">
+          <div><h1>담당자 체크·검토 메모</h1><p>시스템이 제안한 확인 항목과 담당자의 확인 완료를 구분해 관리합니다. 메모 초안은 수정·복사해 내부 양식에 붙여 넣습니다.</p></div>
+          <div class="acts"><span class="small muted" style="align-self:center">규칙 v0.2 · 산식 사전 v0.3 · 업종 기준 제조</span></div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1.1fr">
+          <div class="stack" style="gap:16px">
+            <div class="panel mk-wrap"><i class="mk">1</i>
+              <div class="panel-h"><h2>확인 항목</h2><span class="seg"><span class="on">전체 11</span><span>미확인 6</span><span>완료 5</span></span></div>
+              <div class="ck"><span class="chk"></span><div><h3>1년 내 만기 차입금 612억원의 차환 계획</h3><p>주의 · 유동성/만기 · 주석 18 · S04에서 추가</p></div><span class="st caut">주의</span></div>
+              <div class="ck"><span class="chk"></span><div><h3>종속회사 지급보증 280억원 실행 사유</h3><p>주의 · 우발/부외 · 주석 33</p></div><span class="st caut">주의</span></div>
+              <div class="ck"><span class="chk"></span><div><h3>재고자산 +126억원 증가의 구성 (원재료·제품)</h3><p>관찰 · S03 현금흐름 차이 · 주석 9</p></div><span class="st watch">관찰</span></div>
+              <div class="ck"><span class="chk"></span><div><h3>단기차입으로 장기부채를 상환했는지</h3><p>부실징후 점검표 #6 · 원문 확인 필요</p></div><span class="st plain" style="background:var(--surface-3)">원문 확인</span></div>
+              <div class="ck"><span class="chk"></span><div><h3>신용등급 미검출 — 등급 보유 여부</h3><p>I.1 미검출 · 판정 불가</p></div><span class="st none">미검출</span></div>
+              <div class="ck"><span class="chk"></span><div><h3>후속사건 참조(주석 35) 추출 실패</h3><p>IV.5 · XI.4 · 원문 직접 확인</p></div><span class="st warn plain">추출 실패</span></div>
+              <div class="ck done"><span class="chk on"></span><div><h3>감사의견 적정 · 계속기업 불확실성 없음</h3><p>V.1 · 담당자 확인 2026.10.24 14:12</p></div><span class="st ok">완료</span></div>
+              <div class="small muted" style="padding-top:10px">완료 항목 4건 더 보기 ▾</div>
+            </div>
+
+            <div class="panel mk-wrap"><i class="mk">2</i>
+              <div class="panel-h"><h2>부실징후 점검표</h2><span class="sub">17항목 · 판정 방식별</span></div>
+              <table class="t">
+                <thead><tr><th>판정 방식</th><th class="n">항목</th><th class="n">해당</th><th class="n">해당 없음</th><th class="n">미확인</th></tr></thead>
+                <tbody>
+                  <tr><td>자동 판정</td><td class="n">9</td><td class="n">2</td><td class="n">6</td><td class="n">1</td></tr>
+                  <tr><td>주석·원문 확인</td><td class="n">5</td><td class="n">1</td><td class="n">1</td><td class="n">3</td></tr>
+                  <tr><td>외부 확인</td><td class="n">3</td><td class="n muted">–</td><td class="n muted">–</td><td class="n">3</td></tr>
+                </tbody>
+              </table>
+              <p class="src">17개 목록은 원자료 대조 전 구성안(N-U12). 미확인과 “위험 없음”을 구분합니다.</p>
+            </div>
+          </div>
+
+          <div class="panel mk-wrap"><i class="mk">3</i>
+            <div class="panel-h"><h2>검토 메모 초안</h2><div class="row"><span class="small muted">자동 생성 10.24 14:05 · 수정 3곳</span><button class="btn sm">다시 생성</button><button class="btn sm pri">복사</button></div></div>
+            <div class="memo">
+              <h4>1. 기업 개요</h4>
+              <p>한결정밀(주) · 제조(C29) · 2025 사업보고서 연결 기준 · 접수번호 20260318000412</p>
+              <h4>2. 핵심 재무</h4>
+              <p>매출 2,718억원(+3.8%), 영업이익 257억원(+35억원, 영업이익률 9.5%). 영업CF 64억원으로 영업이익의 0.25배 수준. 부채비율 150.7%, 이자보상비율 3.5배(이자비용 근사).</p>
+              <h4>3. 변동과 현금흐름</h4>
+              <p>영업이익 증감은 매출 +100, 원가 −60, 판관비 −10, 기타·조정 +5로 분해됨(회계상 분해). 재고 +126억원·매출채권 +105억원 증가로 현금전환주기 121.0일(+34.8일). <span class="ed">수주 확대에 따른 선발주로 회사 측 설명 확인 예정.</span></p>
+              <h4>4. 주석·위험징후 (규칙 v0.2, 팀 가설)</h4>
+              <p>주의 2건: 1년 내 만기 차입금 612억원이 현금성자산+영업CF 247억원을 초과 <span class="ref">[주석 18]</span>. 종속회사 지급보증 제공 280억원, 자기자본 대비 19.7% <span class="ref">[주석 33]</span>. 관찰 3건.</p>
+              <h4>5. 위험 사건 예측</h4>
+              <p>모델 검증 전으로 확률 보류.</p>
+              <h4>6. 추가 확인 사항</h4>
+              <p>차환 계획, 보증 실행 사유, 후속사건 원문. <span class="ed">내부 거래내역·담보 평가는 내부 자료로 확인.</span></p>
+              <h4>7. 담당자 의견</h4>
+              <p class="muted">담당자가 작성합니다.</p>
+            </div>
+            <p class="src">노란 배경은 담당자가 수정한 부분입니다. 다시 생성 시 수정본과의 충돌 처리는 미정(N-U08).</p>
+          </div>
+        </div>
+
+        <div class="panel mk-wrap"><i class="mk">4</i>
+          <div class="between small">
+            <div class="row" style="gap:20px"><span><span class="muted">적용 업종</span> 제조 C29</span><span><span class="muted">산식 사전</span> v0.3</span><span><span class="muted">규칙</span> v0.2 (팀 가설)</span><span><span class="muted">검색어 사전</span> v0.1</span><span><span class="muted">모델</span> 결합 v0.1 · 검증 전</span></div>
+            <span class="muted">화면·메모·복사본의 버전이 같아야 합니다</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <aside class="desc">
+      <h2>화면 설명</h2>
+      <p class="lead">검토 흐름의 마지막 단계. 확인 항목을 처리하고 검토 기록 초안을 수정·복사한다. 최종 의견과 내부 자료 판단은 담당자가 한다.</p>
+      <ol>
+        <li><span class="n">1</span><div><h3>확인 항목 체크</h3><p>규칙·징후·미검출·추출 실패에서 생긴 항목을 모은다. 시스템 제안을 확인 완료로 자동 전환하지 않으며, 완료 시 확인자·시각을 남긴다. 기업·기간 전환 시 상태가 섞이지 않아야 한다.</p><div class="ids"><span class="id">N-F21</span><span class="id">N-F22</span><span class="id">N-F37</span><span class="id u">N-U08</span></div></div></li>
+        <li><span class="n">2</span><div><h3>부실징후 점검표</h3><p>17항목을 자동 판정 / 주석·원문 확인 / 외부 확인으로 나눈다. 자동 불가 항목도 목록에 남긴다.</p><div class="ids"><span class="id">N-F34</span><span class="id">N-R36</span><span class="id u">N-U12</span></div></div></li>
+        <li><span class="n">3</span><div><h3>검토 메모 초안</h3><p>핵심 수치·변동·주석 근거·예측 상태·추가 확인을 7개 구역으로 생성한다. 접수번호와 주석 위치를 함께 넣고, 담당자 수정 부분을 구분 표시한다. 미검증 확률은 결과로 쓰지 않는다.</p><div class="ids"><span class="id">N-F23</span><span class="id">N-R26</span></div></div></li>
+        <li><span class="n">4</span><div><h3>버전 바</h3><p>업종 기준·산식·규칙·검색어 사전·모델 버전을 상시 표시해 화면과 메모의 근거가 같은지 대조한다.</p><div class="ids"><span class="id">N-F24</span><span class="id">N-R27</span></div></div></li>
+      </ol>
+      <div class="block">
+        <h4>확장 (이번 범위 아님)</h4>
+        <p>PDF 출력·지점 운영은 N-F29 확장 기능으로 현재 버튼을 두지 않는다.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

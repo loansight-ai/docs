@@ -1,0 +1,9 @@
+{
+  "name": "LoanSight 화면 설계서 생성기",
+  "id": "loansight-spec-builder-0001",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] }
+}

@@ -1,0 +1,169 @@
+{
+  "published_at": "2026-10-27",
+  "local_folder": "docs/screen-design",
+  "github_folder": "02-design/screen-design",
+  "latest_version": "v0.0.2",
+  "latest_pdf": "LoanSight AI_화면설계서_v0.0.2_261026.pdf",
+  "source_files": [
+    {
+      "path": "figma-plugin/code.js",
+      "bytes": 114240,
+      "sha256": "3d705791f28430ff2c7f69536f0cff0ee580264acbeeaf0263b1857ad211e85f"
+    },
+    {
+      "path": "figma-plugin/kb-color/code.js",
+      "bytes": 5895,
+      "sha256": "b61f4130552576091b1232d29bf6712ffa081d6c7fc82bed23aa1d79bab8b760"
+    },
+    {
+      "path": "figma-plugin/kb-color/manifest.json",
+      "bytes": 233,
+      "sha256": "352ccbe816e0f3f3d5bf2e624ef4b631471e717d0a4ee8e7a4114d8ee170088e"
+    },
+    {
+      "path": "figma-plugin/manifest.json",
+      "bytes": 245,
+      "sha256": "80f99556d785d407092ef930dc125c780c80557e2cb22abe20bab18a29650ce5"
+    },
+    {
+      "path": "figma-plugin/README.txt",
+      "bytes": 1138,
+      "sha256": "78f8a91122214e832cd25e6c053b5ccd15bd3fb712d7833a34ad47c6ee051207"
+    },
+    {
+      "path": "figma-plugin/src/lib.js",
+      "bytes": 19890,
+      "sha256": "b5671eacc8c29cee9ad72d4f19b2e9a35514fbbbce09e2f7aa1351eca9922729"
+    },
+    {
+      "path": "figma-plugin/src/main.js",
+      "bytes": 1314,
+      "sha256": "27aae601250e969f817cfb56a48ace7cde81aec3a890e188a6d1da2a15b61755"
+    },
+    {
+      "path": "figma-plugin/src/mock_test.js",
+      "bytes": 2887,
+      "sha256": "e6cbf7ae57ef0de9610e58721c2c2ebb771bbbdda232b11b82b23aac4f2ec7c4"
+    },
+    {
+      "path": "figma-plugin/src/screens1.js",
+      "bytes": 35631,
+      "sha256": "9b87cf15d66bc5d063787aafa53951d713eeea19d19bf67f79f6bdd54a578a20"
+    },
+    {
+      "path": "figma-plugin/src/screens2.js",
+      "bytes": 44857,
+      "sha256": "4d670a9de10b79bf6c90caac3ba6e83b005ae167dc4e34671b78f25aa0ef9450"
+    },
+    {
+      "path": "figma-plugin/src/spec.js",
+      "bytes": 12548,
+      "sha256": "09ad150fafe05f072312fcb88f8743046f184ba848c14180c5a68fd053f098f9"
+    },
+    {
+      "path": "html/charts.js",
+      "bytes": 15539,
+      "sha256": "a795c32f96e443814d5a1c82aa9b107be3db7cef5bd118e8db1e08e234e954f0"
+    },
+    {
+      "path": "html/flow.html",
+      "bytes": 7373,
+      "sha256": "1bd81813d2bdb9df406abcdb9ab1e6bdbe8e954ee47637cf86e106760b9305c7"
+    },
+    {
+      "path": "html/index.html",
+      "bytes": 2799,
+      "sha256": "51ee04a36361e560e5c3432dd5bfec47c0d8f7568bc7944be2e38fb1fb424cf8"
+    },
+    {
+      "path": "html/open.html",
+      "bytes": 5885,
+      "sha256": "617d3d3a3e1c39a4d6782127f068f1c9e7d18e271639b160f9e1507fb78fff9a"
+    },
+    {
+      "path": "html/overview.html",
+      "bytes": 7336,
+      "sha256": "d991f48098107e763284ce3bb113d96951c39c9e0355d1fc3136db493c7dc4d1"
+    },
+    {
+      "path": "html/s01.html",
+      "bytes": 10714,
+      "sha256": "6556a4d462643a568416e7075c1f94391e371889c2cd415bd5a749c2c785de52"
+    },
+    {
+      "path": "html/s02.html",
+      "bytes": 12054,
+      "sha256": "63b43fbfb6a8492c34f1d60702e5f1f67bffe84300235e92264e5571d9004130"
+    },
+    {
+      "path": "html/s03.html",
+      "bytes": 10541,
+      "sha256": "5c4084b365cbdd8c21ebf7312c277c3b825af271d043e1001af3bcd8f68f3076"
+    },
+    {
+      "path": "html/s04-2.html",
+      "bytes": 10965,
+      "sha256": "cbf456e26489f5e17214b40fc39bf9cde526823b2c40a5b299686f710f33c271"
+    },
+    {
+      "path": "html/s04.html",
+      "bytes": 16200,
+      "sha256": "60fb87df1ef969b39631a2118d7845adb08fcc898df42703eeacc59432a3e715"
+    },
+    {
+      "path": "html/s05.html",
+      "bytes": 10789,
+      "sha256": "c4b344688c71ae3c98e7dab4af96ba7950670620d972dde48b3d9f25df33f38b"
+    },
+    {
+      "path": "html/s06.html",
+      "bytes": 6526,
+      "sha256": "7b68d9740ea4766415a295f50b1412c4a7400c414473ba51b52872eff3c822db"
+    },
+    {
+      "path": "html/s07.html",
+      "bytes": 9605,
+      "sha256": "deb10c2cccde7508742248dbe1b0aa28a4e98d7adbd5a1f37656fd0adbdf5566"
+    },
+    {
+      "path": "html/s08.html",
+      "bytes": 10356,
+      "sha256": "487f60fd6cff4b10fdbe405c3ba72da41b3d781a4745a8eb43e593a86dbdc982"
+    },
+    {
+      "path": "html/sheet.css",
+      "bytes": 12215,
+      "sha256": "395f23b81d20a2ababfd2c15af7f7cd780725244e03c00d76460920a32ca5022"
+    },
+    {
+      "path": "html/shell.js",
+      "bytes": 3383,
+      "sha256": "d014d654ff330e62aa8140d724f5bff87dfc1b8af742040d6dc7281c90e57d82"
+    },
+    {
+      "path": "html/ui.html",
+      "bytes": 7820,
+      "sha256": "d8292a45e83d94ba6c813b1dd94e5692d4ba111bde8154aced9aa15db6014918"
+    },
+    {
+      "path": "LoanSight AI_화면설계서_v0.0.1_261024.pdf",
+      "bytes": 10653808,
+      "sha256": "7aa6f37ed0f12c0b7c6504dcd3b2f562a92b84163d5d918f47dcd36b115f04cd"
+    },
+    {
+      "path": "LoanSight AI_화면설계서_v0.0.2_261026.pdf",
+      "bytes": 10673245,
+      "sha256": "8ad2880327e7697212a16241009c2e90a27e966e093db8496098fabd7225e640"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2538,
+      "sha256": "37d9327b3ce15f867e2ffbfb37215a9294b01c30d2cfa85983740a66a8702983"
+    }
+  ],
+  "notes": [
+    "PDF 표지와 Figma 페이지명은 v0.0.1을 유지한 원본이다.",
+    "HTML은 별도 2026.10.23 시안이다.",
+    "기획안 v2.0·요구사항/PRD/기능명세서 v0.0.4 기준. 문서 게시가 구현/검증 완료를 뜻하지 않는다."
+  ]
+}

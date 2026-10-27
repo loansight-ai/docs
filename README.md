@@ -4,7 +4,7 @@
 
 ## 기준 문서와 개정 이력
 
-README 갱신일: **2026-10-24** · 팀: **KB Bridge 4조참치** · 검토 전 계획과 실제 구현·검증 결과를 구분합니다.
+README 갱신일: **2026-10-27** · 팀: **KB Bridge 4조참치** · 검토 전 계획과 실제 구현·검증 결과를 구분합니다.
 
 | 구분 | 최신 버전 · 개정일 | 원문·상세 |
 | --- | --- | --- |
@@ -22,6 +22,7 @@ README 갱신일: **2026-10-24** · 팀: **KB Bridge 4조참치** · 검토 전 
 | --- | --- |
 | 2026.10.22 | LoanSight AI 명칭과 기획안 v1.0 기준 소개 |
 | 2026.10.24 | 기획안 v2.0·요구사항 v0.0.4·WBS v1.1 반영. 4개 업종/렌탈 제외, 상환·연체 위험 사건 목표, 지표·단계·패널·주석 추출/검출 상태, 미정 표본과 최신 문서 연결 갱신 |
+| 2026.10.27 | 화면 설계서 v0.0.2와 이전 PDF·HTML 시안·Figma 소스 게시 및 설계 목차 연결 |
 
 기획안과 요구사항이 충돌하는 부분에는 요구사항의 명시적 10/23 팀 결정(4개 업종 확정·장비/물품 렌탈 제외·기능 검증 15곳/정답지 5곳 논의 필요)을 적용합니다.
 
@@ -164,6 +165,7 @@ WBS는 필수 59개·뉴스 보완 3개·마일스톤 7개이며 기존 완료 2
 | 요구사항 정의서 | [requirements.md](01-planning/requirements.md) |
 | 기능 정의서 | [functions.md](01-planning/functions.md) |
 | 설계 산출물 | [02-design](02-design/README.md) |
+| 화면 설계서 | [최신 v0.0.2 PDF](02-design/screen-design/LoanSight%20AI_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C_v0.0.2_261026.pdf) · [개정 이력·HTML·Figma 소스](02-design/screen-design/README.md) |
 | 수행일지 | [03-daily-logs](03-daily-logs/README.md) |
 | 이슈·오류 기록 | [04-issue-logs](04-issue-logs/README.md) |
 | 테스트 케이스 | [test-cases.md](05-testing/test-cases.md) |

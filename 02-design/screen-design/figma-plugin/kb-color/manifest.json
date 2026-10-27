@@ -1,0 +1,9 @@
+{
+  "name": "LoanSight KB 컬러 적용",
+  "id": "loansight-kb-recolor-0001",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] }
+}

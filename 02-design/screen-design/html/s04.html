@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>N-S04 주석 확인과 위험징후 패널</title>
+<link rel="stylesheet" href="sheet.css">
+<script src="shell.js"></script>
+<script src="charts.js"></script>
+<style>
+  .stage-sum { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+  .stage-sum > div { padding: 14px 16px; border-right: 1px solid var(--line); }
+  .stage-sum > div:last-child { border-right: 0; }
+  .stage-sum .c { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-top: 6px; }
+  .stage-sum .c small { font-size: 13px; font-weight: 500; color: var(--ink-2); margin-left: 4px; }
+  .sig { display: grid; grid-template-columns: 70px 1fr auto; gap: 12px; align-items: start; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .sig:last-child { border-bottom: 0; }
+  .sig h3 { font-size: 13.5px; font-weight: 600; }
+  .sig p { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+  .tile { display: flex; flex-direction: column; gap: 6px; }
+  .tile .nm { font-size: 12px; color: var(--ink-2); min-height: 34px; }
+  .tile .v { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .tile .v small { font-size: 12px; color: var(--ink-2); font-weight: 500; margin-left: 2px; }
+  .tile .d { font-size: 11.5px; color: var(--ink-2); }
+  .tl { position: relative; padding-left: 18px; display: flex; flex-direction: column; gap: 12px; }
+  .tl::before { content: ''; position: absolute; left: 5px; top: 4px; bottom: 4px; width: 2px; background: var(--line); }
+  .tl > div { position: relative; font-size: 12.5px; }
+  .tl > div::before { content: ''; position: absolute; left: -17px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--ink-3); }
+  .tl > div.c::before { border-color: var(--caut); background: var(--caut-bg); }
+  .tl b { display: block; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head" data-id="N-S04" data-name="주석 확인과 위험징후 패널" data-f="N-F09~11 · F36~41" data-r="N-R11~14 · R38~43" data-p="08 / 14"></header>
+  <div class="sheet-body">
+    <div class="app" data-active="S04">
+      <main class="main">
+        <div class="page-h">
+          <div><h1>주석 확인과 위험징후 패널</h1><p>공시 기준 현재 징후입니다. 확인 순서를 정하기 위한 표시이며 은행 건전성 분류·내부 등급과 다릅니다. 단계 조건은 현직자 확인 전 팀 가설입니다.</p></div>
+          <div class="acts"><span class="tag hyp" style="align-self:center">규칙 v0.2 · 팀 가설</span><button class="btn sm">규칙 보기</button></div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1.35fr">
+          <div class="stack" style="gap:16px">
+            <div class="mk-wrap"><i class="mk">1</i>
+              <div class="stage-sum">
+                <div><span class="st warn">경고</span><div class="c">0<small>건</small></div><p class="small muted">원문 확인 필수</p></div>
+                <div><span class="st caut">주의</span><div class="c">2<small>건</small></div><p class="small muted">확인 목록에 추가</p></div>
+                <div><span class="st watch">관찰</span><div class="c">3<small>건</small></div><p class="small muted">추세·위치 확인</p></div>
+              </div>
+            </div>
+            <div class="panel mk-wrap"><i class="mk">2</i>
+              <div class="panel-h"><h2>징후 목록</h2><span class="sub">단계순 · 경고는 상단 고정</span></div>
+              <div class="sig"><span class="st caut">주의</span><div><h3>1년 내 만기 차입금 &gt; 현금성자산 + 영업CF</h3><p>612억원 &gt; 183 + 64 = 247억원 · 유동성/만기 · 규칙 R-L03</p></div><button class="btn sm">원문</button></div>
+              <div class="sig"><span class="st caut">주의</span><div><h3>제공 보증의 자기자본 대비 급증</h3><p>8.1% → 19.7% (115 → 280억원) · 우발/부외 · 규칙 R-C02</p></div><button class="btn sm">원문</button></div>
+              <div class="sig"><span class="st watch">관찰</span><div><h3>현금전환주기 업종 중앙값 대비 열위</h3><p>121.0일 · 중앙값 88.0일 · 전기 대비 +34.8일</p></div><button class="btn sm ghost">추세</button></div>
+              <div class="sig"><span class="st watch">관찰</span><div><h3>영업CF/영업이익 2년 연속 하락</h3><p>0.86 → 0.55 → 0.25 · 상환재원</p></div><button class="btn sm ghost">추세</button></div>
+              <div class="sig"><span class="st watch">관찰</span><div><h3>CAPEX/영업CF 악화</h3><p>0.71 → 1.07 → 2.22배 · 설비투자의 차입 충당 가능성</p></div><button class="btn sm ghost">추세</button></div>
+              <div class="note" style="margin-top:8px">단계 없음은 “정상”이 아닙니다. 판정 불가 2건(가동률·신용등급 미검출)은 S07 미확인 목록으로 이동합니다.</div>
+            </div>
+          </div>
+
+          <div class="stack" style="gap:16px">
+            <div class="panel mk-wrap"><i class="mk">3</i>
+              <div class="panel-h"><h2>제조업 우선 지표</h2><span class="sub">당기 · 전기 대비 · 업종 중앙값 · 5개년</span></div>
+              <div class="grid g5">
+                <div class="tile"><div class="nm">현금전환주기</div><div class="v">121.0<small>일</small></div><div class="d">+34.8 · 중앙 88.0</div><span data-chart="spark" data-d='{"values":[null,78.2,81.0,86.2,121.0],"w":120,"h":28,"color":"#2C5A7E"}'></span></div>
+                <div class="tile"><div class="nm">재고·채권 증가율 − 매출증가율</div><div class="v">+26.8<small>%p</small></div><div class="d">전기 +2.1 · 중앙 +1.4</div><span data-chart="spark" data-d='{"values":[null,null,1.8,2.1,26.8],"w":120,"h":28,"color":"#2C5A7E"}'></span></div>
+                <div class="tile"><div class="nm">영업CF / 영업이익</div><div class="v">0.25<small>배</small></div><div class="d">전기 0.55 · 중앙 0.92</div><span data-chart="spark" data-d='{"values":[0.76,0.91,0.86,0.55,0.25],"w":120,"h":28,"color":"#2C5A7E"}'></span></div>
+                <div class="tile"><div class="nm">CAPEX / 영업CF</div><div class="v">2.22<small>배</small></div><div class="d">전기 1.07 · 중앙 0.84</div><span data-chart="spark" data-d='{"values":[0.62,0.58,0.71,1.07,2.22],"w":120,"h":28,"color":"#2C5A7E"}'></span></div>
+                <div class="tile"><div class="nm">이자보상비율 <span class="tag apx">근사</span></div><div class="v">3.5<small>배</small></div><div class="d">전기 4.4 · 중앙 5.2</div><span data-chart="spark" data-d='{"values":[5.1,4.6,4.8,4.4,3.5],"w":120,"h":28}'></span></div>
+              </div>
+              <div class="sep"></div>
+              <div class="between small"><span class="muted">보조: 매출원가율 79.2% · 개발비 자산화 비중 12.4% · 가동률 자료 없음</span><span class="muted">왜곡 주의: 장치산업 영업이익 → EBITDA 병행</span></div>
+            </div>
+
+            <div class="grid g2">
+              <div class="panel mk-wrap"><i class="mk">4</i>
+                <div class="panel-h"><h2>현금전환주기 분해</h2><span class="sub">일</span></div>
+                <div data-chart="stack" data-d='{"w":380,"h":200,"cats":["2023","2024","2025"],"series":[{"name":"재고일수","sign":1,"color":"#2F3B4B","values":[68.4,71.8,91.2]},{"name":"채권일수","sign":1,"color":"#8C96A3","values":[60.1,63.4,75.2]},{"name":"매입채무일수","sign":-1,"color":"#C6CCD4","values":[47.5,49.0,45.4]}],"net":[81.0,86.2,121.0],"netName":"CCC"}'></div>
+              </div>
+              <div class="panel">
+                <div class="panel-h"><h2>영업이익 · 영업CF · CAPEX</h2><span class="sub">억원</span></div>
+                <div data-chart="bars" data-d='{"w":380,"h":200,"cats":["2023","2024","2025"],"series":[{"name":"영업이익","color":"#2F3B4B","values":[196,222,257]},{"name":"영업CF","color":"#8C96A3","values":[168,121,64]},{"name":"CAPEX","color":"#C6CCD4","values":[119,129,142]}]}'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1.45fr 1fr">
+          <div class="panel mk-wrap"><i class="mk">5</i>
+            <div class="panel-h"><h2>주석 자동 추출 결과</h2><span class="sub">공통 6항목 + 제조 추가 항목 · 검색어 사전 v0.1</span></div>
+            <table class="t">
+              <thead><tr><th>항목</th><th>위치</th><th>추출 내용</th><th>검출 상태</th></tr></thead>
+              <tbody>
+                <tr><td>감사의견·계속기업</td><td class="small muted">V.1</td><td class="small">당기 적정 · 계속기업 불확실성 기재 없음</td><td><span class="st ok">검출</span></td></tr>
+                <tr class="hl"><td>차입 만기·재무약정</td><td class="small muted">IV.4 · 주석 18</td><td class="small">1년 내 만기 612억원 · 부채비율 200% 유지 약정(준수)</td><td><span class="st ok">검출</span></td></tr>
+                <tr><td>신용등급</td><td class="small muted">I.1</td><td class="small">–</td><td><span class="st none">미검출</span></td></tr>
+                <tr><td>담보 제공</td><td class="small muted">주석 19</td><td class="small">토지·건물 장부 410억원 · 채권최고액 540억원</td><td><span class="st ok">검출</span></td></tr>
+                <tr><td>소송·제재</td><td class="small muted">XI.2</td><td class="small">“해당사항 없음” 원문 기재</td><td><span class="st plain" style="background:var(--surface-3);color:var(--ink-2)">공시상 없음</span></td></tr>
+                <tr class="hl"><td>지급보증 (조건부 의무)</td><td class="small muted">XI.2 · 주석 33</td><td class="small">종속회사 차입 보증 실행 280억원 (한도 350)</td><td><span class="st ok">검출</span></td></tr>
+                <tr><td>부외거래·후속사건</td><td class="small muted">IV.5 · XI.4</td><td class="small">참조 문장 “주석 35 참조” 추적 실패</td><td><span class="st warn plain">추출 실패</span></td></tr>
+                <tr><td>재고 평가손실 <span class="tag">제조</span></td><td class="small muted">주석 9</td><td class="small">평가충당금 18 → 31억원</td><td><span class="st ok">검출</span></td></tr>
+              </tbody>
+            </table>
+            <p class="src">미검출·추출 실패는 “없음”이나 0으로 바꾸지 않습니다. 공시상 없음은 원문에 명시된 경우에만 저장합니다.</p>
+          </div>
+
+          <div class="stack" style="gap:16px">
+            <div class="panel mk-wrap"><i class="mk">6</i>
+              <div class="panel-h"><h2>원문 근거 카드</h2><span class="st caut">주의 근거</span></div>
+              <table class="t" style="margin-bottom:10px">
+                <tbody>
+                  <tr><td class="muted small">유형 · 방향</td><td class="small">지급보증 · <b>제공</b> (종속회사)</td><td class="muted small">금액</td><td class="small"><b>280억원</b> / 한도 350</td></tr>
+                  <tr><td class="muted small">기준일</td><td class="small">2025.12.31</td><td class="muted small">접수번호</td><td class="small">20260318000412</td></tr>
+                </tbody>
+              </table>
+              <div class="quote">회사는 종속회사인 한결오토메이션(주)의 금융기관 차입금과 관련하여 한도 350억원의 지급보증을 제공하고 있으며, 당기말 현재 실행잔액은 280억원입니다.<span class="loc">2025 사업보고서 · III 재무에 관한 사항 · 연결재무제표 주석 33 우발부채와 약정사항 · 표 33-2 아래 문단</span></div>
+              <div class="row" style="margin-top:10px"><button class="btn sm">원문에서 보기</button><button class="btn sm ghost">체크 목록에 추가됨</button></div>
+            </div>
+            <div class="grid g2">
+              <div class="panel">
+                <div class="panel-h"><h2>보증 제공 / 수취</h2></div>
+                <table class="t">
+                  <thead><tr><th></th><th class="n">당기</th><th class="n">전기</th></tr></thead>
+                  <tbody>
+                    <tr><td><b>제공</b></td><td class="n">280</td><td class="n">115</td></tr>
+                    <tr><td class="muted">수취</td><td class="n muted">60</td><td class="n muted">60</td></tr>
+                  </tbody>
+                </table>
+                <p class="src">합산하지 않음 · 억원</p>
+              </div>
+              <div class="panel">
+                <div class="panel-h"><h2>타임라인</h2></div>
+                <div class="tl">
+                  <div class="c"><b>2026.03</b>보증 한도 350억 갱신</div>
+                  <div class="c"><b>2026.06</b>단기차입 300억 만기</div>
+                  <div><b>2026.11</b>사채 200억 만기</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <aside class="desc">
+      <h2>화면 설명</h2>
+      <p class="lead">주석 확인 단계에 업종별 위험징후 패널을 둔다. 별도 화면 ID 없이 N-S04의 하위 영역이다. 업종별 차트 변형은 다음 페이지(N-S04-2).</p>
+      <ol>
+        <li><span class="n">1</span><div><h3>징후 요약</h3><p>경고·주의·관찰 건수를 색과 텍스트로 함께 표시한다. 게이지·레이더는 쓰지 않는다.</p><div class="ids"><span class="id">N-F37</span><span class="id">N-F38</span><span class="id">N-R39</span></div></div></li>
+        <li><span class="n">2</span><div><h3>징후 목록</h3><p>경고는 최상단 고정·원문 확인 필수, 주의는 확인 목록에 추가, 관찰은 추세·위치로 연결. 각 행에 수치·판단 축·규칙 ID를 남긴다.</p><div class="ids"><span class="id">N-F21</span><span class="id">N-F37</span><span class="id u">N-U17</span></div></div></li>
+        <li><span class="n">3</span><div><h3>업종 우선 지표 타일</h3><p>당기 값, 전기 대비, 업종 중앙값, 5개년 스파크라인. 결측 연도는 회색 점선 원. 보조·왜곡 주의 지표를 아래 줄에 적는다.</p><div class="ids"><span class="id">N-F36</span><span class="id">N-R38</span><span class="id u">N-U12</span></div></div></li>
+        <li><span class="n">4</span><div><h3>업종 맞춤 차트</h3><p>제조: CCC 분해 누적 막대, 영업이익·영업CF·CAPEX 막대. 차트 하나에 질문 하나.</p><div class="ids"><span class="id">N-F38</span><span class="id">N-R40</span><span class="id u">N-U20</span></div></div></li>
+        <li><span class="n">5</span><div><h3>주석 자동 추출 결과</h3><p>공통 6항목과 업종 추가 항목. 검출 상태는 검출 / 공시상 없음 / 미검출 / 추출 실패 4개. 다른 장 참조는 참조 위치에서 재추출한다.</p><div class="ids"><span class="id">N-F09</span><span class="id">N-F39</span><span class="id">N-F40</span><span class="id">N-F41</span><span class="id u">N-U18</span></div></div></li>
+        <li><span class="n">6</span><div><h3>원문 근거 카드</h3><p>유형·방향·금액·한도/잔액·기준일·접수번호·목차 위치와 원문 문장. 제공/수취는 분리하고 합산하지 않는다. 소송·보증·차입 만기 타임라인을 둔다.</p><div class="ids"><span class="id">N-F10</span><span class="id">N-F11</span><span class="id">N-R12</span></div></div></li>
+      </ol>
+      <div class="block">
+        <h4>AI 요약 (패널 하단, 스크롤 영역)</h4>
+        <p>확인된 사실 / 원문 근거 / 해석과 한계 / 담당자 추가 확인 네 구역으로 쓴다. 숫자는 코드 계산값만 인용하고 소송 결과·손실을 단정하지 않는다.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>
