@@ -165,5 +165,18 @@
     "PDF 표지와 Figma 페이지명은 v0.0.1을 유지한 원본이다.",
     "HTML은 별도 2026.10.23 시안이다.",
     "기획안 v2.0·요구사항/PRD/기능명세서 v0.0.4 기준. 문서 게시가 구현/검증 완료를 뜻하지 않는다."
-  ]
+  ],
+  "current_semantic_version": "v0.0.1",
+  "requested_version": "v0.0.2",
+  "requested_version_applied": false,
+  "blocker": "Figma Starter MCP call limit",
+  "current_planning_basis": {
+    "plan": "v2.2",
+    "requirements": "v0.0.6",
+    "PRD": "v0.0.5",
+    "functions": "v0.0.5",
+    "WBS": "v1.3",
+    "screen": "v0.0.2"
+  },
+  "figma_url": "https://www.figma.com/design/zErjqF995NFNB1HkQkU4yk?node-id=78-3"
 }

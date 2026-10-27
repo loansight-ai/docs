@@ -1,83 +1,97 @@
 {
   "project": "LoanSight AI",
-  "publication_date": "2026-10-27",
+  "publication_date": "2026-10-28",
   "basis": {
-    "plan": "v2.1",
-    "requirements": "v0.0.5 (파일명 기준; 내부 이력 v0.0.4)",
-    "PRD": "v0.0.4",
-    "functions": "v0.0.4",
-    "WBS": "v1.2"
+    "plan": "v2.2",
+    "requirements": "v0.0.6",
+    "PRD": "v0.0.5",
+    "functions": "v0.0.5",
+    "WBS": "v1.3",
+    "screen": "v0.0.1"
   },
   "counts": {
-    "requirements": 43,
-    "functions": 41,
-    "screens": 8,
-    "unknown_questions": 20,
-    "improvement_records": 38,
-    "requirement_function_links": 43,
-    "WBS_tasks": 69
+    "requirements": 38,
+    "functions": 37,
+    "screens": 7,
+    "unknown_questions": 18,
+    "WBS_tasks": 55
   },
   "sources": {
     "plan": {
-      "filename": "기획안_LoanSight_AI_v2.1.docx",
-      "version": "v2.1",
-      "repository_path": "01-planning/sources/기획안_LoanSight_AI_v2.1.docx",
-      "sha256": "d0fc54f710c2ea3833aeaf2ec7cf3af25fd44d45049092743d251893021f5584",
-      "size": 68543
+      "filename": "LoanSight_AI_기획안_v2.2.docx",
+      "version": "v2.2",
+      "repository_path": "01-planning/sources/LoanSight_AI_기획안_v2.2.docx",
+      "sha256": "619e5f5a0dc23cbf3064c3ff87594688ddabedebf359b40fb5e27e621366821e",
+      "size": 54076
+    },
+    "PRD": {
+      "filename": "LoanSight_AI_PRD_v0.0.5_261028.docx",
+      "version": "v0.0.5",
+      "repository_path": "01-planning/sources/LoanSight_AI_PRD_v0.0.5_261028.docx",
+      "sha256": "04a14b04d19aaf2a56442b5af79afda79e06e1a8ae7f723e6ac0e418cc340b8e",
+      "size": 58688
+    },
+    "requirements": {
+      "filename": "LoanSight_AI_요구사항정의서_v0.0.6_261028.xlsx",
+      "version": "v0.0.6",
+      "repository_path": "01-planning/sources/LoanSight_AI_요구사항정의서_v0.0.6_261028.xlsx",
+      "sha256": "e7774687781486b9f627682617ae9dfeb0cdb5a346d0ebfaa43054615375d720",
+      "size": 34523
+    },
+    "functions": {
+      "filename": "LoanSight_AI_기능명세서_v0.0.5_261028.xlsx",
+      "version": "v0.0.5",
+      "repository_path": "01-planning/sources/LoanSight_AI_기능명세서_v0.0.5_261028.xlsx",
+      "sha256": "19adc61b38dd0bfc7989d9092e4fecb110863dd5c373bfec995808b21a83e2e9",
+      "size": 45214
+    },
+    "WBS": {
+      "filename": "LoanSight_AI_WBS_v1.3_261028.xlsx",
+      "version": "v1.3",
+      "repository_path": "01-planning/sources/LoanSight_AI_WBS_v1.3_261028.xlsx",
+      "sha256": "9cf6a2b091d60a1f9ebe5fcabcc553f8fccf3cdf1804c3e14ab417d7b430c34a",
+      "size": 55729
+    },
+    "WBS-Markdown": {
+      "filename": "LoanSight_AI_WBS_v1.3_261028.md",
+      "version": "v1.3",
+      "repository_path": "01-planning/sources/LoanSight_AI_WBS_v1.3_261028.md",
+      "sha256": "5d15c06fa4638260adecd143b5b2b1af9587a3d8a80287f5f8711c3931d0f5d2",
+      "size": 30236
+    }
+  },
+  "previous_inputs": {
+    "plan": {
+      "filename": "LoanSight_AI_기획안_v2.1.docx",
+      "sha256": "d0fc54f710c2ea3833aeaf2ec7cf3af25fd44d45049092743d251893021f5584"
     },
     "requirements": {
       "filename": "LoanSight_AI_요구사항정의서_v0.0.5_261027.xlsx",
-      "version": "v0.0.5",
-      "repository_path": "01-planning/sources/LoanSight_AI_요구사항정의서_v0.0.5_261027.xlsx",
-      "sha256": "0a799f037e7a1b12b0400f5c8b7d4f6f7b93ac073a5fe686b7367d72169a3a27",
-      "size": 43516
-    },
-    "functions": {
-      "filename": "LoanSight AI_기능명세서_v0.0.4_261024.xlsx",
-      "version": "v0.0.4",
-      "repository_path": "01-planning/sources/LoanSight AI_기능명세서_v0.0.4_261024.xlsx",
-      "sha256": "172e38c0681edb64cd992cef9700fea6a872a86f67e78c070fafc43cbf0b49b7",
-      "size": 34483
-    },
-    "PRD": {
-      "filename": "LoanSight AI_PRD_v0.0.4_261024_김동혁.docx",
-      "version": "v0.0.4",
-      "repository_path": "01-planning/sources/LoanSight AI_PRD_v0.0.4_261024_김동혁.docx",
-      "sha256": "ea2c6f6dacf5222a01f984e9a63d433b5ab50d2e3328f30d045bf8d224f25dee",
-      "size": 57227
+      "sha256": "0a799f037e7a1b12b0400f5c8b7d4f6f7b93ac073a5fe686b7367d72169a3a27"
     },
     "WBS": {
       "filename": "LoanSight_AI_WBS_v1.2_261027.xlsx",
-      "version": "v1.2",
-      "repository_path": "01-planning/sources/LoanSight_AI_WBS_v1.2_261027.xlsx",
-      "sha256": "dbbe712ff961de6a1818eb6f05ace4b678de80251ec1ee7a78d2a3f1ca4b81a5",
-      "size": 78060
+      "sha256": "dbbe712ff961de6a1818eb6f05ace4b678de80251ec1ee7a78d2a3f1ca4b81a5"
     },
-    "WBS-Markdown": {
-      "filename": "LoanSight AI_WBS_v1.1_261024.md",
-      "version": "v1.1 (이전 원문)",
-      "repository_path": "01-planning/sources/LoanSight AI_WBS_v1.1_261024.md",
-      "sha256": "1478d290a314f9239b8ebbe37b31e8ef2ddad51806583b130981776ea68d27b0",
-      "size": 75600
+    "functions": {
+      "filename": "LoanSight AI_기능명세서_v0.0.4_261024.xlsx",
+      "sha256": "172e38c0681edb64cd992cef9700fea6a872a86f67e78c070fafc43cbf0b49b7"
+    },
+    "PRD": {
+      "filename": "LoanSight AI_PRD_v0.0.4_261024_김동혁.docx",
+      "sha256": "ea2c6f6dacf5222a01f984e9a63d433b5ab50d2e3328f30d045bf8d224f25dee"
     }
   },
-  "documents": {
-    "plan": "01-planning/proposal.md",
-    "PRD": "01-planning/prd.md",
-    "requirements": "01-planning/requirements.md",
-    "functions": "01-planning/functions.md",
-    "WBS": "01-planning/wbs.md"
-  },
-  "source_unchanged": true,
   "unknowns_preserved": true,
   "implementation_or_acceptance_complete": false,
-  "derived_documents_pending_review": [
-    "PRD",
-    "functions"
+  "Figma_v002_applied": false,
+  "Figma_blocker": "Starter MCP call limit",
+  "validation_page": "https://app.notion.com/p/40680be201ba81ddb717d75d409cde98",
+  "requested_screen_version": "v0.0.2",
+  "Notion_pending_manual_fields": [
+    "WBS 2.4 미정 질문=N-U09",
+    "WBS 5.M4 미정 질문=N-U09"
   ],
-  "issues": [
-    "15/5 vs 10/5 표본 상충",
-    "요구사항 개정 이력 v0.0.4",
-    "WBS v1.2 개정 이력 누락·#NAME?·5.4 완료근거 미기록"
-  ]
+  "notion_current_prd": "https://app.notion.com/p/40680be201ba81fda2f1e63666b8dfef",
+  "notion_impact_check": "https://app.notion.com/p/40680be201ba81abbcf5c2f63e39c440"
 }
