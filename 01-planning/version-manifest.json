@@ -88,10 +88,16 @@
   "Figma_blocker": "Starter MCP call limit",
   "validation_page": "https://app.notion.com/p/40680be201ba81ddb717d75d409cde98",
   "requested_screen_version": "v0.0.2",
-  "Notion_pending_manual_fields": [
-    "WBS 2.4 미정 질문=N-U09",
-    "WBS 5.M4 미정 질문=N-U09"
-  ],
   "notion_current_prd": "https://app.notion.com/p/40680be201ba81fda2f1e63666b8dfef",
-  "notion_impact_check": "https://app.notion.com/p/40680be201ba81abbcf5c2f63e39c440"
+  "notion_impact_check": "https://app.notion.com/p/40680be201ba81abbcf5c2f63e39c440",
+  "Notion_preserved_manual_fields": {
+    "decision": "기존 값 보존",
+    "decision_date": "2026-10-28",
+    "fields": [
+      "WBS 2.4 미정 질문=N-U09",
+      "WBS 5.M4 미정 질문=N-U09"
+    ],
+    "local_source_difference_acknowledged": true,
+    "pending_approval": false
+  }
 }
