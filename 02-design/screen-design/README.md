@@ -1,38 +1,24 @@
-# LoanSight AI 화면 설계서
+# LoanSight AI 화면 설계
 
-기획안 v2.0, 요구사항 정의서 v0.0.4, 기능명세서 v0.0.4, PRD v0.0.4를 기준으로 만든 화면 설계서입니다. Figma 파일 `LoanSight AI 화면 설계서 v0.0.1`의 `화면 설계서 v0.0.1` 페이지가 편집 원본이며, 이 폴더의 PDF는 그 페이지를 내보낸 것입니다.
+## 현재 확인본과 개정 상태
 
-## 버전
+기존 v0.0.1 섹션은 보존한다. 파일명 v0.0.2_261026 PDF는 KB 색상만 바꾼 의미상 v0.0.1 보관본이다. 이번 실제 설계 개정 v0.0.2는 **미완료**다. Figma Starter MCP 호출 한도에 도달해 복제·편집·새 PDF 내보내기를 하지 못했다.
 
-| 버전 | 날짜 | 파일 | 변경 내용 |
-| --- | --- | --- | --- |
-| v0.0.1 | 2026.10.24 | `LoanSight AI_화면설계서_v0.0.1_261024.pdf` | 최초 작성. 개요, 공통 UI(COMUI-001), N-S01~N-S08(N-S04는 2장) 총 11장 |
-| v0.0.2 | 2026.10.26 | `LoanSight AI_화면설계서_v0.0.2_261026.pdf` | KB 컬러 적용(KB Yellow Positive #FFBC00, KB Gray #60584C, KB Yellow Negative #FFCC00), 공통 UI 메시지 상자 폭 보정 |
+[실제 Figma 원본](https://www.figma.com/design/zErjqF995NFNB1HkQkU4yk?node-id=78-3)
 
-화면 내 기업명(한결건설㈜)·수치·모델 성능 값은 레이아웃 확인용 예시 값입니다. 미정 질문(N-U01~U20)은 각 시트 Description에 빨간 글씨로 연결되어 있습니다.
+## 재개할 변경
 
-## 폴더 구성
+1. 원본 섹션 78:3 전체를 복사하고 오른쪽 x≥4550에 겹치지 않게 v0.0.2를 만든다. 원본 위치(-100,-100), 크기4410×9572를 보존한다.
+2. KB 컬러·Pretendard·그리드·편집 가능한 레이어를 유지한다.
+3. 새 버전에서 내부 관리 화면과 이동 메뉴를 제거하고 서비스 7개 화면으로 맞춘다.
+4. OFS 기본/CFS 비교, 10개 판단 관점·보완 산식, 개별/복합 단계·23개 위험 후보·7개 조합, 주석 연결·원인 후보·원문·추가 질문, 타임라인/매트릭스, 제공 보류·P0~P2를 해당 화면에 반영한다.
+5. 오른쪽 메모 상자에 화면별 변경 이유를 적고 개요에 “v0.0.1 대비 변경 사항은 오른쪽 변경 메모를 확인”을 표시한다.
+6. 실제 변경 후에만 새 PDF와 소스/개정 이력을 게시하고 시각 검수한다.
 
-```text
-docs/screen-design/
-├─ README.md
-├─ LoanSight AI_화면설계서_v0.0.1_261024.pdf
-├─ LoanSight AI_화면설계서_v0.0.2_261026.pdf
-├─ html/                    # 2026.10.23 HTML 화면 시안(별도 작업, 그대로 보존)
-└─ figma-plugin/            # Figma 설계서 생성·수정용 개발 플러그인
-   ├─ README.txt            # 실행 방법
-   ├─ manifest.json         # 설계서 생성기
-   ├─ code.js               # src/를 합친 실행 파일
-   ├─ src/                  # 편집 원문(lib, spec, screens1, screens2, main) + mock_test.js
-   └─ kb-color/             # 기존 페이지 색을 KB 컬러로 바꾸는 플러그인
-```
+[문서별 영향표](../../01-planning/v2.1-impact-check.md) · [팀 품질관리 자료](https://app.notion.com/p/40680be201ba81ddb717d75d409cde98)
 
-중간 검수 PDF와 작업 기록은 `workbench/2026-10-24/screen-design-qa/`, `workbench/2026-10-26/screen-design-kb-color/`에 있습니다.
+## 이전 자료
 
-## 수정하는 방법
+기존 PDF·HTML·플러그인은 당시 스냅샷 보관본이며 현재 기획의 구현 완료본으로 사용하지 않는다.
 
-1. `figma-plugin/src/`의 js를 고친 뒤 lib → spec → screens1 → screens2 → main 순서로 합쳐 `code.js`를 만듭니다.
-2. Figma에서 기존 `화면 설계서 v0.0.1` 페이지를 지우고 생성기 플러그인을 다시 실행합니다(Ctrl+Alt+P는 마지막 플러그인 재실행).
-3. `파일 > 프레임을 PDF로 내보내기`로 이 폴더에 새 버전 PDF를 저장하고 위 버전 표를 갱신합니다.
-
-플러그인 폴더 위치가 바뀌었으므로, Figma에서 처음 실행할 때는 `figma-plugin/manifest.json`(생성기)과 `figma-plugin/kb-color/manifest.json`(KB 컬러)을 다시 가져와야 합니다.
+[현재 시스템 설계 v0.4](https://github.com/loansight-ai/code/blob/main/docs/01_LoanSight_AI_Architecture_v0.4.md) · 설계 목표의 개정이며 실제 실행 코드 변경을 뜻하지 않는다.

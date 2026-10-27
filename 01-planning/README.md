@@ -1,24 +1,29 @@
-# LoanSight AI 기획 문서
+# LoanSight AI
 
-**현재 확인 기준:** 기획안 v2.1, 요구사항 파일 v0.0.5, WBS v1.2. PRD·기능명세서 v0.0.4는 사용자의 요청으로 아직 개정하지 않았다. 두 문서의 최신 기획안 영향 검토가 필요하다.
+제조·건설·도소매·부동산 임대 4개 업종의 재무·공시를 연결해 기업금융 담당자의 검토를 돕는다. 장비·물품 렌탈은 제외한다. OFS가 기본이며 CFS는 구분된 비교 자료다. 정량 징후 → 관련 주석 → 원인 후보 → 원문 근거 → 추가 질문으로 연결한다. 공식 여신 판단·내부 등급은 담당자가 수행한다.
 
-기획안은 검증 설계에 10곳·정답지 5곳을 목표로 적지만 다른 문단에는 기능 표본 15곳이 남아 있다. 요구사항/WBS는 15곳·5곳을 논의 필요로 기재한다. 수치를 합의 전 확정하지 않는다. 40개사 원문 추출과 모델 학습·평가 표본은 별개다.
+## 문서 기준과 개정 이력
 
-요구사항 v0.0.5 파일의 내부 표제와 개정 이력은 v0.0.4에 머물며 WBS v1.2는 v1.2 개정 이력 행이 없다. 원문을 그대로 보존하고 파일명 기준으로 구분한다. WBS 원문에 일부 날짜 수식 #NAME? 오류와 5.4 완료 표시/진행률·근거 누락이 있어 확인이 필요하다. 원문의 상태는 작성자가 입력한 값이며 구현·검증 완료의 독립적 증거가 아니다.
+기획안 v2.2 · 요구사항 v0.0.6 · PRD/기능명세서 v0.0.5 · WBS v1.3 · 2026.10.28 · 검토·승인 미정
 
-| 문서 | 최신 파일 | GitHub | Notion |
-| --- | --- | --- | --- |
-| 기획안 | v2.1 | [기획안](proposal.md) | [기획안](https://app.notion.com/p/3f980be201ba8056a630f774d8c6d097) |
-| 요구사항 | v0.0.5 | [요구사항](requirements.md) | [요구사항](https://app.notion.com/p/3f980be201ba80b68d44c5574e88c531) |
-| WBS | v1.2 | [WBS](wbs.md) | [WBS](https://app.notion.com/p/3ff80be201ba80618c52cb61cc4a6153) |
-| PRD | v0.0.4 (영향 검토 대기) | [PRD](prd.md) | [PRD](https://app.notion.com/p/3fe80be201ba805f92d3ee2ae51ee823) |
-| 기능명세 | v0.0.4 (영향 검토 대기) | [기능](functions.md) | [기능](https://app.notion.com/p/3f980be201ba80f793a9f39755ab785a) |
-
-## 게시 개정 이력
-
-| 날짜 | 내용 |
+| 개정일 | 변경 |
 | --- | --- |
-| 2026.10.24 | v2.0·v0.0.4·v1.1 원문 상세 게시 |
-| 2026.10.27 | 기획안 v2.1·요구사항 파일 v0.0.5·WBS v1.2 원문 및 상세 갱신. PRD·기능명세 개정 보류. |
+| 2026.10.27 | 기획안 v2.1·요구사항 파일 v0.0.5·WBS v1.2 공유 |
+| 2026.10.28 | v2.1 누락 보완·서비스와 팀 내부 관리 분리·문서별 개정·수식 보정 |
 
-[원문 및 버전 명세](version-manifest.json) · [과거 정합성 점검](alignment-check.md)
+## 현행 산출물
+
+| 문서 | 버전 | 원문 |
+| --- | --- | --- |
+| 기획안 | v2.2 | [LoanSight_AI_기획안_v2.2.docx](<sources/LoanSight_AI_기획안_v2.2.docx>) |
+| PRD | v0.0.5 | [LoanSight_AI_PRD_v0.0.5_261028.docx](<sources/LoanSight_AI_PRD_v0.0.5_261028.docx>) |
+| 요구사항 정의서 | v0.0.6 | [LoanSight_AI_요구사항정의서_v0.0.6_261028.xlsx](<sources/LoanSight_AI_요구사항정의서_v0.0.6_261028.xlsx>) |
+| 기능명세서 | v0.0.5 | [LoanSight_AI_기능명세서_v0.0.5_261028.xlsx](<sources/LoanSight_AI_기능명세서_v0.0.5_261028.xlsx>) |
+| WBS Excel | v1.3 | [LoanSight_AI_WBS_v1.3_261028.xlsx](<sources/LoanSight_AI_WBS_v1.3_261028.xlsx>) |
+| WBS Markdown | v1.3 | [LoanSight_AI_WBS_v1.3_261028.md](<sources/LoanSight_AI_WBS_v1.3_261028.md>) |
+
+현행 요구사항 38개·기능 37개·화면 7개·미정 질문 18개·WBS 55개다. 기존 ID를 유지하며 번호의 빈 자리는 이관 이력이다.
+
+[상세 반영 점검](v2.1-impact-check.md) · [버전/해시](version-manifest.json) · [정합성 안내](alignment-check.md) · [팀 품질관리 자료](https://app.notion.com/p/40680be201ba81ddb717d75d409cde98)
+
+화면 설계는 기존 v0.0.1이 현재 확인본이다. 실제 v0.0.2 개정은 Figma 접근 한도로 미완료이며 이전 색상 변경 PDF와 구분한다.
