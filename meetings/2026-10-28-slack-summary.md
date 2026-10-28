@@ -107,7 +107,7 @@
 ## 📎 참고 자료
 
 - [Issue #39](https://github.com/loansight-ai/docs/issues/39)
-- PR: 생성 후 연결
+- [PR #40](https://github.com/loansight-ai/docs/pull/40)
 - [Notion 회의록](https://app.notion.com/p/40780be201ba81cb825ac33c56795eac)
 - [GitHub 작업 브랜치 회의록](https://github.com/loansight-ai/docs/blob/docs/39-slack-summary-2026-10-28/meetings/2026-10-28-slack-summary.md)
 - 처리 상태: 연결 PR의 병합 상태와 검증 기록 참고
