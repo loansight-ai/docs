@@ -62,7 +62,7 @@
 ## 📎 참고 자료
 
 - [관련 Issue](https://github.com/loansight-ai/docs/issues/43)
-- 관련 PR: 생성 후 연결
+- [관련 PR](https://github.com/loansight-ai/docs/pull/44)
 - [Notion 회의록](https://app.notion.com/p/40880be201ba8119a4cad9bcc4292d35)
 - 처리 상태: 연결 PR의 병합 상태와 검증 기록 참고
 
