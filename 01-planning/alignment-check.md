@@ -18,6 +18,10 @@
 
 ## 위치별 확인
 
-Notion 및 GitHub main 최종 대조는 게시 후 확인합니다. 이 문구는 최종 대조 결과로 갱신합니다.
+Notion 현행 R37/F35/S·U25/WBS53의 모든 원문 관리 필드는 일치합니다. Markdown 이스케이프와 자동 링크 표시만 정규화했습니다. 기존 전체184개 행과 팀 메모·실제 상태·진행률·날짜·완료근거, 부모 5개 담당·상태·마감과 하위 DB를 보존했습니다. 최신 첨부6개를 재다운로드해 로컬 바이트·SHA256과 대조했습니다. PRD 본문·표82개 줄이 일치합니다. GitHub 변경 범위·원문·링크·head를 확인했으며 병합 후 main의 대조 결과는 아래 PR 본문에 기록합니다.
 
 [원문 해시](version-manifest.json) · [변경 영향표](v2.3-impact-check.md)
+
+- docs: https://github.com/loansight-ai/docs/pull/42
+- code: https://github.com/loansight-ai/code/pull/20
+- .github: https://github.com/loansight-ai/.github/pull/7

@@ -86,7 +86,14 @@
   },
   "verification": {
     "local": true,
-    "notion": "진행 중",
-    "github": "PR 준비 중"
+    "notion": true,
+    "github": "현재 PR head와 병합 후 main 대조 결과는 연결 PR 본문 참조"
+  },
+  "notion_current_prd": "https://app.notion.com/p/40880be201ba814a81dac45868ab98c8",
+  "notion_impact_check": "https://app.notion.com/p/40880be201ba81f0b7d7e449c442a643",
+  "pull_requests": {
+    "docs": "https://github.com/loansight-ai/docs/pull/42",
+    "code": "https://github.com/loansight-ai/code/pull/20",
+    ".github": "https://github.com/loansight-ai/.github/pull/7"
   }
 }
