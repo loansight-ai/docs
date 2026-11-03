@@ -1,3 +1,11 @@
+# 현재 기획안 v2.5 · 2026.11.04
+
+[기획안 상세](https://github.com/loansight-ai/docs/blob/main/01-planning/proposal.md) · [변경 및 미확인 사항](https://github.com/loansight-ai/docs/blob/main/01-planning/plan-v2.5-review.md)
+
+현재 웹 v1.5.3은 OFS 고정입니다. 우선·보조·조건부·관찰까지의 의미와 기준일 현황을 설명했습니다. 연계 PRD·요구사항·기능·WBS 정합성은 보완 중이며 아래 기존 버전은 당시 기록입니다.
+
+---
+
 # LoanSight AI
 
 기업금융·여신심사 담당자를 위한 재무·공시·주석·위험징후 분석 지원 서비스입니다.

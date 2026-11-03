@@ -1,8 +1,8 @@
 {
   "project": "LoanSight AI",
-  "publication_date": "2026-10-29",
+  "publication_date": "2026-11-04",
   "basis": {
-    "plan": "v2.3",
+    "plan": "v2.5",
     "requirements": "v0.0.7",
     "PRD": "v0.0.6",
     "functions": "v0.0.6",
@@ -18,11 +18,11 @@
   },
   "sources": {
     "plan": {
-      "filename": "LoanSight_AI_기획안_v2.3.docx",
-      "version": "v2.3",
-      "repository_path": "01-planning/sources/LoanSight_AI_기획안_v2.3.docx",
-      "sha256": "90c870240cb5add37cf49ecaa88f41d11c6f59d43b5a6f2d3f399e612d9150be",
-      "size": 34723
+      "filename": "LoanSight_AI_기획안_v2.5.docx",
+      "version": "v2.5",
+      "repository_path": "01-planning/sources/LoanSight_AI_기획안_v2.5.docx",
+      "sha256": "27522e5b1d46009fe12982142e787a67676032da358bde0aaf8365426d286da5",
+      "size": 39974
     },
     "requirements": {
       "filename": "LoanSight_AI_요구사항정의서_v0.0.7_261029.xlsx",
@@ -73,7 +73,7 @@
       "3.13"
     ]
   },
-  "accounting_decision": "2026.10.29 최신 사용자 결정: v2.3 원문대로 연결재무제표(CFS)를 우선 사용하고 없으면 별도(OFS)로 전환해 표시한다. 이전 OFS 기본 결정은 이번 개정에서 대체한다.",
+  "accounting_decision": "기획안 v2.5 및 현재 웹 v1.5.3은 OFS 고정. 이전 연계 문서의 CFS 우선 설명은 보완 필요.",
   "screen_design": "사용자 지시로 기존 v0.0.1 Figma/PDF·소스 그대로 유지",
   "Notion_preserved_manual_fields": {
     "decision": "기존 값 보존",
@@ -85,9 +85,10 @@
     "pending_approval": false
   },
   "verification": {
-    "local": true,
-    "notion": true,
-    "github": "현재 PR head와 병합 후 main 대조 결과는 연결 PR 본문 참조"
+    "local_plan": "본문·표·서식·17쪽 출력 확인",
+    "notion": "게시 확인 전",
+    "github": "PR 확인 전",
+    "linked_docs": "전체 정합성 미완료; 과거 basis 버전 유지"
   },
   "notion_current_prd": "https://app.notion.com/p/40880be201ba814a81dac45868ab98c8",
   "notion_impact_check": "https://app.notion.com/p/40880be201ba81f0b7d7e449c442a643",
@@ -95,5 +96,6 @@
     "docs": "https://github.com/loansight-ai/docs/pull/42",
     "code": "https://github.com/loansight-ai/code/pull/20",
     ".github": "https://github.com/loansight-ai/.github/pull/7"
-  }
+  },
+  "web_observed": "v1.5.3"
 }
