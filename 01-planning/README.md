@@ -1,3 +1,13 @@
+# 기획안 v3.0 연계 개정 · 2026.11.04
+
+요구사항 v0.0.10 · 기능명세/PRD v0.0.9. 임대업 주석 추출·요약은 현행 제외. WBS·화면설계·테스트는 기존 버전을 유지합니다.
+
+[기준과 범위](https://github.com/loansight-ai/docs/blob/main/01-planning/v3.0-alignment.md)
+
+---
+
+이하 이전 게시 기준입니다.
+
 # 현재 기획안 v2.5 · 2026.11.04
 
 [기획안 상세](https://github.com/loansight-ai/docs/blob/main/01-planning/proposal.md) · [변경 및 미확인 사항](https://github.com/loansight-ai/docs/blob/main/01-planning/plan-v2.5-review.md)
