@@ -2,11 +2,12 @@
   "date": "2026-11-04",
   "basis": {
     "plan": "v3.0",
-    "requirements": "v0.0.10",
-    "functions": "v0.0.9",
-    "PRD": "v0.0.9"
+    "requirements": "v0.0.11",
+    "functions": "v0.0.10",
+    "PRD": "v0.0.9",
+    "WBS": "v1.8"
   },
-  "scope": "임대업 추출·요약 제외. WBS·화면설계·테스트 변경 제외.",
+  "scope": "엑셀 개정이력·현행 참조·출력/예외·시트 정리. PRD·화면설계·테스트 원문 변경 없음.",
   "sources": {
     "LoanSight_AI_기획안_v3.0.docx": {
       "sha256": "6be02e2e211b29ab0184d52d5a8134149b17dba7d0b4b04bd614c7e6430b2802",
@@ -23,6 +24,22 @@
     "LoanSight_AI_PRD_v0.0.9_261104.docx": {
       "sha256": "7c4afec3ec7694ecdf991b88031f09983de1334d28c33e184eed803e61d31de8",
       "path": "01-planning/sources/LoanSight_AI_PRD_v0.0.9_261104.docx"
+    },
+    "LoanSight_AI_기능명세서_v0.0.10_261104.xlsx": {
+      "sha256": "f54b6728d10c1749f24642bc5e3b3d53466ba12aeabcccc4e6211fd624c775f8",
+      "path": "01-planning/sources/LoanSight_AI_기능명세서_v0.0.10_261104.xlsx"
+    },
+    "LoanSight_AI_요구사항정의서_v0.0.11_261104.xlsx": {
+      "sha256": "acce2c0e8c7f841f0e1763731044d6d56fe929485b42d48775ef5f06f214349b",
+      "path": "01-planning/sources/LoanSight_AI_요구사항정의서_v0.0.11_261104.xlsx"
+    },
+    "LoanSight_AI_WBS_v1.8_261104.xlsx": {
+      "sha256": "c9e3e15f1a7f8534eefd0a74077782d9a7c8e13a1cbfb951e4f1169910521db7",
+      "path": "01-planning/sources/LoanSight_AI_WBS_v1.8_261104.xlsx"
+    },
+    "LoanSight_AI_WBS_v1.8_261104.md": {
+      "sha256": "01791a85c56e194dac74c3531c5dcbad25dc65177a48981bf0e8d86f4627ea19",
+      "path": "01-planning/sources/LoanSight_AI_WBS_v1.8_261104.md"
     }
   },
   "verification": "문서 반영은 구현·배포 검증 완료가 아님"
