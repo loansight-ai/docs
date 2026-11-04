@@ -51,5 +51,17 @@
     }
   },
   "verification": "문서 반영은 구현·배포 검증 완료가 아님",
-  "WBS_status": "사용자 제공 최종본. 원문상 완료52·보류1. 완료근거 임의 추가 없음."
+  "WBS_status": "사용자 제공 최종본. 원문상 완료52·보류1. 완료근거 임의 추가 없음.",
+  "testing_document": {
+    "version": "v1.1",
+    "web_version": "v1.5.9b",
+    "date": "2026-11-05",
+    "manifest": "05-testing/version-manifest.json",
+    "source_sha256": "70111c9bb4d3539bfbfcc01f18e3f0047f1017519a3c4a7b7a4af45c3394495b",
+    "counts": {
+      "PASS": 103,
+      "BLOCKED": 10,
+      "FAIL": 14
+    }
+  }
 }

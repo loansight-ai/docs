@@ -1,0 +1,35 @@
+{
+  "document": "LoanSight AI 통합테스트시나리오케이스",
+  "version": "v1.1",
+  "revision_date": "2026-11-05",
+  "web_version": "v1.5.9b",
+  "source": {
+    "path": "05-testing/sources/LoanSight_AI_통합테스트시나리오케이스_v1.1.xlsx",
+    "sha256": "70111c9bb4d3539bfbfcc01f18e3f0047f1017519a3c4a7b7a4af45c3394495b",
+    "bytes": 90191
+  },
+  "detail": "05-testing/test-cases.md",
+  "notion": "https://app.notion.com/p/3fb80be201ba800aa0f6dc670c9b4667",
+  "counts": {
+    "PASS": 103,
+    "BLOCKED": 10,
+    "FAIL": 14
+  },
+  "cases": 127,
+  "scenarios": 24,
+  "defect_records": 44,
+  "evidence": {
+    "path": "05-testing/evidence/LoanSight_AI_테스트증빙_v1.1_261105.zip",
+    "sha256": "4cfa9d2d85c0ff3be0b9a2ab3cc805744786ba93369e4e4e2d2527b910f83482",
+    "files": 164
+  },
+  "scope": "통합테스트 문서와 게시 색인만 갱신. 기획·요구·기능·PRD·WBS·화면 설계와 서비스 코드/설정은 변경하지 않음.",
+  "verification": {
+    "source_hash_match": true,
+    "ids_unique": true,
+    "expectations_preserved": true,
+    "original_user_records_preserved": true,
+    "formula_errors": 0
+  },
+  "review_approval": "미정"
+}
