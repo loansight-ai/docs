@@ -94,7 +94,7 @@
 ## 📎 참고 자료
 
 - [관련 Issue](https://github.com/loansight-ai/docs/issues/63)
-- 관련 PR: 생성 후 연결
+- [관련 PR](https://github.com/loansight-ai/docs/pull/64)
 - [Notion 회의록](https://app.notion.com/p/40e80be201ba81c281f7d777ad83f4cc)
 - [GitHub 브랜치 회의록](https://github.com/loansight-ai/docs/blob/docs/63-slack-summary-2026-11-04/meetings/2026-11-04-slack-summary.md)
 - 처리 상태: 작성 중·검증 중
