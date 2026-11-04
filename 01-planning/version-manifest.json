@@ -5,7 +5,7 @@
     "requirements": "v0.0.11",
     "functions": "v0.0.10",
     "PRD": "v0.0.9",
-    "WBS": "v1.8"
+    "WBS": "v2.0"
   },
   "scope": "엑셀 개정이력·현행 참조·출력/예외·시트 정리. PRD·화면설계·테스트 원문 변경 없음.",
   "sources": {
@@ -40,7 +40,16 @@
     "LoanSight_AI_WBS_v1.8_261104.md": {
       "sha256": "01791a85c56e194dac74c3531c5dcbad25dc65177a48981bf0e8d86f4627ea19",
       "path": "01-planning/sources/LoanSight_AI_WBS_v1.8_261104.md"
+    },
+    "LoanSight_AI_WBS_v2.0.xlsx": {
+      "path": "01-planning/sources/LoanSight_AI_WBS_v2.0.xlsx",
+      "sha256": "65e5f2067195d5f821ee643c7260a52fa5fc2155c655a9866a9ceeafe63189b9"
+    },
+    "LoanSight_AI_WBS_v2.0.md": {
+      "path": "01-planning/sources/LoanSight_AI_WBS_v2.0.md",
+      "sha256": "6d885d6de8590e98804f6a0300715751595c0b38b4bee0e48b69194f3cf6d505"
     }
   },
-  "verification": "문서 반영은 구현·배포 검증 완료가 아님"
+  "verification": "문서 반영은 구현·배포 검증 완료가 아님",
+  "WBS_status": "사용자 제공 최종본. 원문상 완료52·보류1. 완료근거 임의 추가 없음."
 }
