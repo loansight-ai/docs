@@ -40,7 +40,7 @@
 ## 📎 참고 자료
 
 - [관련 Issue](https://github.com/loansight-ai/docs/issues/69)
-- 관련 PR 연결 대기
+- [관련 PR](https://github.com/loansight-ai/docs/pull/70)
 - [Notion 회의록](https://app.notion.com/p/41080be201ba81c1a682cb97696f7de5)
 
 <details>
