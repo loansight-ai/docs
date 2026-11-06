@@ -59,7 +59,7 @@
 ## 📎 참고 자료
 
 - [관련 Issue](https://github.com/loansight-ai/docs/issues/67)
-- 관련 PR 연결 대기
+- [관련 PR](https://github.com/loansight-ai/docs/pull/68)
 - [Notion 회의록](https://app.notion.com/p/41080be201ba81d6bf59e4ea30229cbb)
 
 <details>
