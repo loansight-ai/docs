@@ -1,3 +1,23 @@
+# 최신 원문 · 2026.11.12
+
+사용자가 확인한 로컬 docs 파일 기준입니다. 문서의 실제 개정 이력은 각 원문을 확인합니다.
+
+| 문서 | 파일 |
+| --- | --- |
+| 기획안_v3.0.docx | [원문](docs/LoanSight_AI_기획안_v3.0.docx) |
+| PRD_v1.0.docx | [원문](docs/LoanSight_AI_PRD_v1.0.docx) |
+| 요구사항정의서_v1.0.xlsx | [원문](docs/LoanSight_AI_요구사항정의서_v1.0.xlsx) |
+| 기능명세서_v1.0.xlsx | [원문](docs/LoanSight_AI_기능명세서_v1.0.xlsx) |
+| WBS_v2.0.xlsx | [원문](docs/LoanSight_AI_WBS_v2.0.xlsx) |
+| 화면설계서_v1.0.pdf | [원문](docs/LoanSight_AI_화면설계서_v1.0.pdf) |
+| 통합테스트시나리오케이스_v1.1.xlsx | [원문](docs/LoanSight_AI_통합테스트시나리오케이스_v1.1.xlsx) |
+
+[최종 제출 ZIP](https://drive.google.com/file/d/1VChZ5uohwFoxGgZ-MVCRA73DqE1ul92L/view?usp=drive_link) · [버전 및 해시](01-planning/version-manifest.json)
+
+아래는 이전 게시 기록입니다. 기존 상세 Markdown의 v1.0 반영은 별도 검토 중이며, 원문을 우선합니다.
+
+---
+
 ## 통합테스트 최신 문서 · 2026.11.05
 
 통합테스트 **v1.1 / 웹 베타 v1.5.9b**: 127개 케이스, PASS103·FAIL14·BLOCKED10. 사용자 원래 기록과 기대 결과를 보존하고 실제 관찰·증빙·제한을 기록했습니다.

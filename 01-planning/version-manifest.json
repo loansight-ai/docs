@@ -63,5 +63,53 @@
       "BLOCKED": 10,
       "FAIL": 14
     }
-  }
+  },
+  "active_sources": {
+    "LoanSight_AI_기획안_v3.0.docx": {
+      "path": "docs/LoanSight_AI_기획안_v3.0.docx",
+      "sha256": "6be02e2e211b29ab0184d52d5a8134149b17dba7d0b4b04bd614c7e6430b2802",
+      "git_blob": "490e0d7fe4a985be97bf2b0e5d8f12125b057af0"
+    },
+    "LoanSight_AI_PRD_v1.0.docx": {
+      "path": "docs/LoanSight_AI_PRD_v1.0.docx",
+      "sha256": "6eddfdd020038da6c40f948ba18707d236dbc9cd6e995a1bb685366da58999f2",
+      "git_blob": "6bc0db0b657ffa8e6e6c60f7438d9d064a6b00af"
+    },
+    "LoanSight_AI_요구사항정의서_v1.0.xlsx": {
+      "path": "docs/LoanSight_AI_요구사항정의서_v1.0.xlsx",
+      "sha256": "21274b40729cb5b47f2c8b913a348f5a9ca902501fcd88a1dfb9058f2bbfc612",
+      "git_blob": "790f5b28871ab6f9dffff02b3ca5e8212bd4d431"
+    },
+    "LoanSight_AI_기능명세서_v1.0.xlsx": {
+      "path": "docs/LoanSight_AI_기능명세서_v1.0.xlsx",
+      "sha256": "d6231e6d5cbdcc6e84532aa74b4a4ffaf7e41e34b41de42112fe6de5976bdc55",
+      "git_blob": "f2180629fdbb5fbbe26d78cf3d6fd38241b25f43"
+    },
+    "LoanSight_AI_WBS_v2.0.xlsx": {
+      "path": "docs/LoanSight_AI_WBS_v2.0.xlsx",
+      "sha256": "65e5f2067195d5f821ee643c7260a52fa5fc2155c655a9866a9ceeafe63189b9",
+      "git_blob": "89ac640c19c1461f0c7bcc4842d4ddb5b4f62410"
+    },
+    "LoanSight_AI_화면설계서_v1.0.pdf": {
+      "path": "docs/LoanSight_AI_화면설계서_v1.0.pdf",
+      "sha256": "e713ca952f2c92bc55f9156c6f650ebf91bb647916b3260d3f8f156f22b9a0f0",
+      "git_blob": "47b99f82f8a8f711f12e7c51a52727fe1194fa3b"
+    },
+    "LoanSight_AI_통합테스트시나리오케이스_v1.1.xlsx": {
+      "path": "docs/LoanSight_AI_통합테스트시나리오케이스_v1.1.xlsx",
+      "sha256": "70111c9bb4d3539bfbfcc01f18e3f0047f1017519a3c4a7b7a4af45c3394495b",
+      "git_blob": "f8d4b2d302fb0065228ed441f3601333c291a061"
+    }
+  },
+  "active_basis": {
+    "plan": "v3.0",
+    "requirements": "v1.0",
+    "functions": "v1.0",
+    "PRD": "v1.0",
+    "WBS": "v2.0",
+    "screen_design": "v1.0",
+    "test": "v1.1"
+  },
+  "active_basis_checked": "2026-11-12",
+  "notice": "기존 basis·sources는 이전 게시 이력. 상세 Markdown과 Notion 데이터베이스의 최신 원문 대조는 미완료."
 }
