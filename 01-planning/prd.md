@@ -1,6 +1,6 @@
 # PRD v1.0
 
-[원문 DOCX](../docs/LoanSight_AI_PRD_v1.0.docx)의 문단과 표 텍스트입니다. 이미지·서식은 원문을 확인하세요. 원문에 적힌 과거 파일 경로는 당시 내용으로 보존하므로 현재 경로는 [문서 목록](../README.md)을 따릅니다.
+[정정된 원문 DOCX](../docs/LoanSight_AI_PRD_v1.0.docx)의 문단과 표 텍스트입니다. 이미지·서식은 원문을 확인하세요.
 
 KB Bridge · 파이널 프로젝트
 
@@ -352,7 +352,9 @@ N-S04 하단 불릿·보증구성·만기·소송 영역은 제거 또는 다른
 
 날짜 · 버전 | 변경 내용 | 이유 · 영향 | 대체·제외 | 승인
 
-2026.11.04 / v1.1 | KB Bridge PRD 양식으로 재작성. 최신 원문 버전·ID·목적·데이터·일정 연결. | 기존 PRD의 간략 구성 보완, 파일명/내부 표제 불일치 해소. | 원본·이전본 보존. 임대업 제외·연체확률 향후·주석 모델 입력 분리. | 미정
+2026.11.04 / v1.0 | KB Bridge PRD 양식으로 재작성. 최신 원문 버전·ID·목적·데이터·일정 연결. | 기존 PRD의 간략 구성 보완, 파일명/내부 표제 불일치 해소. | 원본·이전본 보존. 임대업 제외·연체확률 향후·주석 모델 입력 분리. | 미정
+
+2026.11.12 / v1.0 | 버전 표기와 문서 참조 경로 정정. | 사용자 지정 최종본 v1.0 및 현재 docs 구조와 일치. | 정정 전 원문 보존. 기획 내용 변경 없음. | 미정
 
 부록 A. 제출 전 체크리스트
 
@@ -384,9 +386,9 @@ AI 활용 | 계산·규칙은 코드, 패턴은 비지도 모델, 문서 설명�
 
 예외 · 제외 | 자료 미확보·계산 불가·추출 실패·생성 실패를 구분한다. 임대업·내부 자료 수집·승인 자동화는 제외하고 확률 예측은 향후 검토한다.
 
-참조 문서: docs/planning/LoanSight_AI_기획안_v3.0.docx; docs/requirements/LoanSight_AI_요구사항정의서_v1.0.xlsx; docs/functional-specification/LoanSight_AI_기능명세서_v1.0.xlsx.
+참조 문서: docs/LoanSight_AI_기획안_v3.0.docx; docs/LoanSight_AI_요구사항정의서_v1.0.xlsx; docs/LoanSight_AI_기능명세서_v1.0.xlsx.
 
-일정·화면·시험 참조: docs/WBS/LoanSight_AI_WBS_v2.0.xlsx(.md), docs/screen-design/LoanSight AI_화면설계서_v1.0_261103.pdf, docs/test-scenario/LoanSight_AI_통합테스트시나리오케이스_v0.0.9_261104_v1.5.9b.xlsx.
+일정·화면·시험 참조: docs/LoanSight_AI_WBS_v2.0.xlsx; docs/LoanSight_AI_화면설계서_v1.0.pdf; docs/LoanSight_AI_통합테스트시나리오케이스_v1.1.xlsx.
 
 ---
 
