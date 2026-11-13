@@ -4,6 +4,19 @@
 
 [원문 목록](../README.md) · [원문 폴더](../docs/) · [버전 및 해시](version-manifest.json)
 
+
+## 현행 상세 문서
+
+| 문서 | 버전 | 상세 |
+| --- | --- | --- |
+| 기획안 | v3.0 | [기획안](proposal.md) |
+| PRD | v1.0 | [PRD](prd.md) |
+| 요구사항 | v1.0 | [요구사항](requirements.md) |
+| 기능명세 | v1.0 | [기능명세](functions.md) |
+| WBS | v2.0 | [WBS](wbs.md) |
+| 화면설계서 | v1.0 | [원문 PDF](../docs/LoanSight_AI_화면설계서_v1.0.pdf) |
+| 통합테스트 | v1.1 | [원문 XLSX](../docs/LoanSight_AI_통합테스트시나리오케이스_v1.1.xlsx) |
+
 아래는 이전 게시 당시 내용입니다. 상세 Markdown의 최신 원문 대조 및 반영은 아직 진행 중입니다.
 
 ---
