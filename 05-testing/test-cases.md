@@ -2335,3 +2335,28 @@
 | TS-LS-26-TC-02 | 재시험 PASS | v1.0기대결과유지 | prefers-reduced-motion:reduce설정후요약진입.미디어상태true·핵심수치/차트/상세접근유지확인. | workbench/2026-11-05/test-v159b-full/<br />full.json #reduced-motion / reduced-motion.png |
 | TS-LS-26-TC-03 | 재시험 PASS | v1.0기대결과유지 | 현대백화점체크저장→새로고침→동일기업재선택후같은체크복원확인.임시메모/체크정리. | workbench/2026-11-05/test-v159b-full/<br />results.json #memo-and-check-reload / restored.txt |
 | TS-LS-26-TC-04 | 재시험 FAIL | v1.0기대결과유지 | 새로고침하면검색으로돌아가기업/연도/메뉴자동복원없음.재선택하면메모·체크는복구되나명시적인이전분석복원안내/버튼은없음. | workbench/2026-11-05/test-v159b-full/<br />results.json #memo-and-check-reload.resetToSearch / restored.txt |
+
+
+## 원문 시험 정보 · 당시 기록
+
+다음은 v1.1 작성 당시 원문에 기재된 시험 환경과 제한입니다.
+
+**운영 URL**: https://loansight-ai-2sb2.onrender.com/
+
+**시험 환경**: 별도 Google Chrome 헤드리스 자동화. 데스크톱1440×1000·모바일390×844. 열린 사용자 Chrome 세션을 조작한 시험은 아님. 실제 배포 푸터 v1.5.9b 확인.
+
+**시험 데이터**: 현대백화점069960 2025 OFS(접수20260318001314), 2024/2016 전환. 추가 극동유화·동일금속·계룡건설산업·광주신세계·전진바이오팜·삼보산업·현대건설·롯데쇼핑. 가이아 미수집·이지스 미분류 예외.
+
+**수행 범위**: 127개 원문ID별 재시험 판정: PASS 103 / FAIL 14 / BLOCKED 10 / NOT EXECUTED 0. FAIL에는 서비스 재현과 구버전 기대값/화면 차이를 함께 구분 기록.
+
+**판정 정의**: PASS=명시 범위 통과. FAIL=원문 기대와 불일치. BLOCKED=실제 시도했으나 필수 키·서버 내부시험 접근·검증된 입력 등 부족. UI fixture는 원문 관찰란에 명시하며 실제 재무데이터/서버 변경은 없음.
+
+**확인 제한**: Gemini 새 생성/정상 답변은 키 미설정. 백엔드 표준화3계정·ECOS 빈설정·DB ZIP전수·모의RSS필터/서버 상류요청·DART/DB충돌 우선순위는 전체 확인 불가. 제한을 합격으로 대체하지 않음.
+
+**기준과 이력**: 기획 문서·서비스 코드는 수정하지 않았습니다. 기대 결과F와 기존 케이스ID/절차·조건은 그대로 보존. 테스트 결과의 원격 동기화는 이번 요청에 포함하지 않음.
+
+**증빙 찾기**: workbench/2026-11-05/test-v159b-full. 각 케이스 증빙 열의 JSON 항목·TXT·PNG로 재조회. DART공식URL은originals.json에 보존. 임시 브라우저 입력은 별도 시험문맥에만 사용.
+
+**입력 원본**: LoanSight_AI_통합테스트시나리오케이스_v1.0.xlsx. 원본 파일은 덮어쓰지 않았으며 원문 사용자 G/H/I/J/K는 새 파일K열과 원본에 보존.
+
+**원본 SHA256**: 312cff6128cd31c76c437f6bf03efaecc750cf9e4f148650b0e2e59e32247e1b
